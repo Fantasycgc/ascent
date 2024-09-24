@@ -3,9 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-      fontFamily:{
-        'nunito':["Nunito", system-ui]
-      }
+      fontFamily: { 
+        "nunito": ['Nunito', 'sans-serif'] 
+    } 
     },
   },
   plugins: [],
