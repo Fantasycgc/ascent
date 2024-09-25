@@ -2,3 +2,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .faq-group {
+    @apply border border-2 border-[#F2F2F2] rounded-sm p-5 w-9/12;
+  }
+  .faq-sub-title {
+    @apply flex justify-between items-center;
+  }
+  .faq-sub-head {
+    @apply font-bold text-[17];
+  }
+  .bg-button-faq {
+    /* @apply rounded-md flex items-center px-[11px] py-2.5 lg:w-10 w-8 lg:h-10 h-8 transition-all duration-500 icon bg-[#1CBBB4]; */
+    @apply rounded-md flex items-center px-[11px] py-2.5 lg:w-10 w-8 lg:h-10 h-8 transition-all duration-500 bg-[#1CBBB4];
+  }
+}
