@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
+  body {
+    @apply font-nunito;
+  }
   .faq-group {
     @apply border border-2 border-[#F2F2F2] rounded-sm p-5 w-9/12;
   }
@@ -15,8 +19,52 @@
   .faq-sub-head {
     @apply font-bold text-[17];
   }
+  .text-general-title {
+    @apply font-Bubblegum-Sans text-[19px] font-medium text-[#1CBBB4] capitalize;
+  }
+  .text-general-h2 {
+    @apply font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] lg:max-w-[520px];
+  }
+  .text-general-desc {
+    @apply pt-1 capitalize font-nunito text-[15px] text-[#686868];
+  }
+
   .bg-button-faq {
     /* @apply rounded-md flex items-center px-[11px] py-2.5 lg:w-10 w-8 lg:h-10 h-8 transition-all duration-500 icon bg-[#1CBBB4]; */
     @apply rounded-md flex items-center px-[11px] py-2.5 lg:w-10 w-8 lg:h-10 h-8 transition-all duration-500 bg-[#1CBBB4];
+  }
+  .our-profess-dtl {
+    @apply p-10 border-2 border-transparent rounded-t-lg rounded-tl-[50px] rounded-br-[50px] rounded-tr-[10px] rounded-bl-[10px] hover:border-[#73BE48] transition-all;
+  }
+  .our-profess-img {
+    @apply rounded-tl-[50px] rounded-br-[50px] rounded-tr-[10px] rounded-bl-[10px] group-hover:rounded-bl-[50px] group-hover:rounded-tr-[50px] group-hover:rounded-br-[10px] group-hover:rounded-tl-[10px] transition-all duration-500;
+  }
+  .our-profess-desc {
+    @apply py-5 capitalize font-medium text-2xl font-jost;
+  }
+  .our-faq-market {
+    @apply pt-1 capitalize font-nunito text-[15px] text-[#686868];
+  }
+  .our-profess-icon li {
+    @apply rounded w-9 h-9 bg-[#FFF0E5] flex justify-center items-center hover:bg-[#ED145B] transition-all duration-500 hover:cursor-pointer hover:text-[#fff];
+  }
+
+  .bg-general {
+    @apply bg-[#FFF0E5];
+  }
+  .student-know-content {
+    @apply grid lg:grid-cols-[37%_auto] grid-cols-1 items-center xl:gap-20 gap-10;
+  }
+  .btn-button {
+    @apply border-2 border-[#ED145B] bg-[#ED145B] rounded-full max-h-[60px] inline-flex p-4 capitalize mt-4 text-[#fff] hover:bg-transparent hover:border-[#ED145B] hover:text-[#ED145B] transition-all duration-500;
+  }
+  .general-year {
+    @apply rounded-md m-5 p-10 capitalize text-[#fff] text-[20px] font-bold text-wrap;
+  }
+  .genearl-year-1 {
+    @apply flex justify-center align-middle items-center absolute max-w-[190px] max-h-[190px];
+  }
+  .student-know-right {
+    @apply relative flex md:gap-[30px] text-[#fff] capitalize;
   }
 }
