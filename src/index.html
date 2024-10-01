@@ -14,10 +14,10 @@
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
   </head>
   <body>
-    <header class="sticky top-0 text-[#ffff]">
+    <header class="sticky top-0 ">
       <div class="header-information bg-[#ED145B] ">
         <div class="container">
-          <div class="flex justify-between gap-2 py-[13px]">
+          <div class="flex justify-between gap-2 py-[13px] text-[#ffff]">
             <div>
               <ul class="flex justify-start gap-4">
                 <li>
@@ -67,35 +67,70 @@
           </div>
         </div>
       </div>
-      <div class="header-navbar bg-yellow-400 py-5">
+      <div class="header-navbar bg-yellow-400 py-5 capitalize">
           <div class="container">
               <div class="flex justify-between items-center">
                <div class="logo flex flex-grow items-center">
                   <img src="images/logo.png" alt="">
-                  <h2 class="pl-3">ascent</h2>
+                  <h2 class="pl-3 font-bold text-2xl ">ascent</h2>
                </div>
                <div class="nav text-black capitalize pr-56">
-                <ul class="flex justify-center items-center gap-[25px]">
-                  <li><a href="#">home</a></li>
+                <ul class="flex justify-center items-center gap-[25px] font-bold">
+                  <li><a href="#">home<i class="fa-solid fa-chevron-down"></i></a></li>
                   <li><a href="#">about us</a></li>
-                  <li><a href="#">service</a></li>
-                  <li><a href="#">blog</a></li> 
-                  <li><a href="#">page</a></li>
+                  <li><a href="#">service<i class="fa-solid fa-chevron-down"></i></a></li>
+                  <li><a href="#">blog<i class="fa-solid fa-chevron-down"></i></a></li> 
+                  <li><a href="#">page<i class="fa-solid fa-chevron-down"></i></a></li>
                   <li><a href="#">contact us</a></li>
                 </ul>
                </div>
                <div class="flex justify-center items-center gap-6 ">
                 <i class="fa-solid fa-magnifying-glass " aria-hidden="true"></i>
-                <button class="btn relative inline-flex items-center justify-start overflow-hidden font-medium transition-all bg-indigo-100 rounded hover:bg-white group py-1.5 px-2.5">
-                  <span class="w-56 h-48 rounded bg-indigo-600 absolute bottom-0 right-0 translate-x-full ease-in duration-500 transition-all translate-y-full mb-9 ml-1 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-                  <span class="relative w-full text-left text-indigo-600 transition-colors duration-300 ease-in group-hover:text-white">Button Hover</span>
+                <button class="btn relative inline-flex items-center justify-start overflow-hidden font-medium transition-all  bg-[rgba(28,187,180,1)] rounded hover:bg-[rgba(28,187,180,1)] group py-1.5 px-2.5">
+                  <span class="w-56 h-48 rounded bg-[#73BE48] absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                  <span class="relative w-full text-left  transition-colors duration-300 ease-in ">Button Hover</span>
+                  <span><i class="relative fa-solid fa-arrow-right" style="color: white;"></i></span>
                   </button>
                </div>
               </div>
           </div>
       </div>
     </header>
-
+    <section id="explore-mind" class="bg-general relative pt-[78px]">
+        <div class="container relative">
+          <div class="flex justify-center text-center items-center flex-col relative">
+            <h1 class="font-normal justify-center text-center xl:text-[70px] lg:text-6xl md:text-5xl text-4xl xl:leading-[128%] lg:leading-[125%] md:leading-[120%] max-w-[776px]">
+              <span class="relative font-jost items-center pl-16">Exploring Minds
+                
+              </span>
+              <span class="absolute top-0 left-[25.75rem] "><img src="images/shap-1.png" alt="" class="w-6 h-6"></span>
+              <span class="font-extrabold font-jost">Elementary </span>
+              <span class="text-[#ED145B] font-bold font-jost">School </span>
+              
+            </h1>
+         
+              <p class="max-w-[431px]">Starting a corporate business typically involves several steps, such as develo a business</p>
+              <button class="btn my-10 relative inline-flex items-center justify-start overflow-hidden font-medium transition-all  bg-[rgba(28,187,180,1)] rounded hover:bg-[rgba(28,187,180,1)] group py-3 px-5">
+                <span class="w-56 h-48 rounded bg-[#73BE48] absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                <span class="relative w-full text-left  transition-colors duration-300 ease-in ">Learn More</span>
+                </button>
+          
+            
+         </div>
+         <div><img src="images/painting.png" alt=""></div>
+         <div class="absolute top-0 left-0"><img src="images/boy_img_1.png" alt="">
+          <span class="absolute -left-2.5 top-[9px] border-2 border-[#F7941E] rounded-[125px] max-h-[369px] w-full h-full"></span>
+        </div>
+         <div class="absolute right-0 bottom-[80px]"><img src="images/boy_img_2.png" alt="">
+          <span class="absolute -left-2.5 top-[9px] border-2 border-[#1CBBB4] rounded-[125px] max-h-[369px] w-full h-full"></span>
+        </div>
+         
+         
+        </div>
+        <div class="absolute left-0 top-[60px]"><img src="images/left-circle-1.png" alt="" class="animate-anime-circle"></div>
+        <div class="absolute top-[186px] left-0"><img src="images/left-circle-2.png" alt=""></div>
+        <div class="absolute right-0 bottom-[165px]"><img src="images/right-circle.png" alt=""></div>
+    </section>
     <!-- <section id="faq" class="lg:pb-15 pb-10">
       <div class="container">
         <div class="border-faq grid grid-cols-2 gap-7.5 lg">

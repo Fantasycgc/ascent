@@ -13,7 +13,8 @@ module.exports = {
         "jost": ["Jost", 'sans-serif']
       },
       animation: {
-        "anime-img": "anime-img 20s linear 0s 9999999999 normal both"
+        "anime-img": "anime-img 20s linear 0s 9999999999 normal both",
+        "anime-circle": "anime-circle 20s linear 0s 9999999999 normal both"
 
       },
       keyframes: {
@@ -34,6 +35,25 @@ module.exports = {
           },
           "90%": {
             transform: "translateX(-8px)",
+          }
+        },
+        "anime-circle": {
+          "0%,100%": {
+            transform: "translateX(-40px)",
+          },
+
+          "10%,30%,50%,70%": {
+            transform: "translateX(-4px)",
+          },
+
+          "20%,40%,60%": {
+            transform: "translateX(4px)",
+          },
+          "80%": {
+            transform: "translateX(2px)",
+          },
+          "90%": {
+            transform: "translateX(-4px)",
           }
         }
       }
