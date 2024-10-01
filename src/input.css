@@ -7,6 +7,16 @@
 @tailwind utilities;
 
 @layer components {
+  .container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  i {
+    @apply font-nunito;
+  }
   body {
     @apply font-nunito;
   }
@@ -28,7 +38,10 @@
   .text-general-desc {
     @apply pt-1 capitalize font-nunito text-[15px] text-[#686868];
   }
-
+  .btn-quote {
+    /* @apply rounded-md bg-[#73BE48] capitalize py-5 px-11 hover:bg-[#1CBBB4]  transition-all ease-linear duration-700; */
+    @apply relative inline-flex items-center justify-start overflow-hidden font-medium transition-all bg-[#73BE48] rounded bg-[#1CBBB4] group py-5 px-11;
+  }
   .bg-button-faq {
     /* @apply rounded-md flex items-center px-[11px] py-2.5 lg:w-10 w-8 lg:h-10 h-8 transition-all duration-500 icon bg-[#1CBBB4]; */
     @apply rounded-md flex items-center px-[11px] py-2.5 lg:w-10 w-8 lg:h-10 h-8 transition-all duration-500 bg-[#1CBBB4];
@@ -44,6 +57,9 @@
   }
   .our-faq-market {
     @apply pt-1 capitalize font-nunito text-[15px] text-[#686868];
+  }
+  .rounded-head-social {
+    @apply rounded-md w-6 h-6 flex text-xs items-center justify-center border border-[#fff] border-opacity-20 hover:bg-[#F7941E] transition-all duration-500;
   }
   .our-profess-icon li {
     @apply rounded w-9 h-9 bg-[#FFF0E5] flex justify-center items-center hover:bg-[#ED145B] transition-all duration-500 hover:cursor-pointer hover:text-[#fff];
@@ -66,5 +82,28 @@
   }
   .student-know-right {
     @apply relative flex md:gap-[30px] text-[#fff] capitalize;
+  }
+  @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1290px) {
+    .container {
+      max-width: 1290px;
+    }
   }
 }

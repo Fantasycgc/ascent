@@ -3,7 +3,8 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     container: {
-      center: true
+      center: true,
+
     },
     extend: {
       fontFamily: {
@@ -12,7 +13,8 @@ module.exports = {
         "jost": ["Jost", 'sans-serif']
       },
       animation: {
-        "anime-img": "anime-img 20s linear 0s 9999999999 normal both",
+        "anime-img": "anime-img 20s linear 0s 9999999999 normal both"
+
       },
       keyframes: {
         "anime-img": {
