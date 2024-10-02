@@ -113,22 +113,16 @@
   .btn2:hover span {
     transform: translateX(0);
   }
-  .icon-kindergarden:before {
-    content: "\e913";
-  }
-  [class^="icon-"],
-  [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: "icomoon" !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
 
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Jost;
+  }
+  p {
+    color: #686868;
   }
 }
