@@ -125,4 +125,35 @@
   p {
     color: #686868;
   }
+  .education-programs-dtl {
+    @apply rounded-[10px] border w-11/12 px-16 py-10 relative hover:shadow-md hover:border-none transition-all ease-linear duration-500;
+  }
+  .education-programs-img {
+    @apply absolute flex justify-center border rounded-[10px] p-5 top-[55px] -left-11 text-[30px] text-[#73BE48] group-hover:bg-[#73BE48] transition-all duration-500 group-hover:text-[#fff];
+  }
+  .education-program-title {
+    @apply font-semibold text-2xl group-hover:text-[#73BE48] transition-all duration-500 capitalize;
+  }
+  .education-btn {
+    @apply group-hover/btn:text-[#73BE48] transition-all duration-500;
+  }
+  .education-btn-animate {
+    animation: fadeDown 3s linear 1s running fade;
+    /* animation: 3s linear 1s infinite running slidein; */
+  }
+  .bg-primary-color {
+    @apply bg-[#73BE48];
+  }
+  .bg-second-color {
+    @apply bg-[#F7941E];
+  }
+  .bg-third-color {
+    @apply bg-[#ED145B];
+  }
+  .bg-fourth-color {
+    @apply bg-[#1CBBB4];
+  }
+  .lastest-btn {
+    @apply border rounded-lg px-7 py-3 hover:bg-second-color hover:text-[#fff] transition-all duration-500 hover:cursor-pointer;
+  }
 }
