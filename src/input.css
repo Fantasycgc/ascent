@@ -18,7 +18,8 @@
     @apply font-nunito;
   }
   body {
-    @apply font-nunito;
+    font-family: font-nunito;
+    line-height: 160%;
   }
   .faq-group {
     @apply border border-2 border-[#F2F2F2] rounded-sm p-5 w-9/12;
@@ -155,5 +156,23 @@
   }
   .lastest-btn {
     @apply border rounded-lg px-7 py-3 hover:bg-second-color hover:text-[#fff] transition-all duration-500 hover:cursor-pointer;
+  }
+  .lastest-detail {
+    @apply py-10;
+  }
+  .header-pinned .\[\.header-pinned_\&\]\:shadow-md {
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+      0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+      0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+  .btn2 span:first-child {
+    transform: translateX(-101%);
+    transition: transform 0.3s ease-in;
+  }
+  .btn2:hover span {
+    transform: translateX(0);
   }
 }
