@@ -168,11 +168,76 @@
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
       var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
-  .btn2 span:first-child {
-    transform: translateX(-101%);
-    transition: transform 0.3s ease-in;
+  .left {
+    @apply flex-[0_0_30%]  relative;
   }
-  .btn2:hover span {
-    transform: translateX(0);
+  .right {
+    @apply flex-[0_0_70%] bg-general relative;
+  }
+  .overlay-text-left {
+    @apply absolute  text-2xl font-[bold] text-[#333] z-[99] translate-x-0 left-0 top-0;
+  }
+  .overlay-text-right {
+    @apply absolute  text-2xl font-[bold] text-[#333] z-[99] right-0 top-0;
+  }
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    @apply left-0 top-0 w-auto;
+  }
+
+  .swiper-pagination-bullet {
+    @apply h-1 w-4 rounded-[10px];
+  }
+
+  .swiper-pagination-bullet-active {
+    @apply w-8 bg-white;
+  }
+
+  /*  */
+  /* #carousel .carousel-content {
+    @apply text-center w-full;
+    background: #111;
+  } */
+  /* #carousel .carousel-content .carousel-sub-title {
+    @apply text-[#b7223a];
+  }
+  #carousel .carousel-content .carousel-title {
+    @apply font-normal text-[50px] text-white px-[60px] py-5;
+  }
+  #carousel .carousel-content .carousel-desc {
+    @apply text-[#888] text-base max-w-[600] m-auto;
+  } */
+  .carousel-slider-item p {
+    @apply h-20 uppercase text-[#848482];
+    /* color: white; */
+  }
+  .carousel-slider-item {
+    @apply p-0 z-[999];
+    /* background-color: white; */
+  }
+  .carousel-slider-item .slider-content {
+    @apply bg-[white] px-[30px] py-20 relative after:content-[""] after:block after:w-[5px] after:h-[0%] after:absolute after:transition-all after:duration-[0.2s] after:ease-linear after:right-0 after:top-0 hover:after:h-full;
+  }
+  #carousel .carousel-slider-item i {
+    @apply text-3xl text-[#848482] mb-2.5;
+  }
+  /* ghi đè css thư viện slick */
+  .carousel-slider .slick-dots li button {
+    @apply transition-all duration-[0.3s] ease-linear rounded-[50%] hover:rounded-[50%] before:content-[""] bg-yellow-500;
+  }
+  .carousel-slider .slick-dots li button:hover {
+    @apply bg-blue-700;
+  }
+  /* selector tới thẻ li phải có clas slick-active */
+  .carousel-slider .slick-dots li.slick-active button {
+    @apply bg-[#e62b4a];
+  }
+  /* before hoặc after thêm nội dung vào trước hoặc sau 1 thẻ html */
+  .carousel-slider-item .slider-content::after {
+    /* display:none ẩn khỏi UI */
+    @apply bg-[#e62b4a];
+    /* transition kg bat duoc su thay doi cua thuoc tinh display */
+  }
+  .carousel-slider-item .slider-content:hover::after {
+    /* display: block; */
   }
 }

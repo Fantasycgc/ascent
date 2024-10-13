@@ -1,56 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<style>
-    body{
-        margin: 0;
-        padding: 0;
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
     }
 
     .board {
-        display: flex;
-        height: 100vh;
+      display: flex;
+      height: 100vh;
     }
 
-    .left{
-        flex: 0 0 40%;
-        background-color: #f0f0f0;
-        position: relative;
+    .left {
+      flex: 0 0 40%;
+      background-color: #f0f0f0;
+      position: relative;
     }
     .right {
-        flex: 0 0 60%;
-        background-color: pink;
-        position: relative;
+      flex: 0 0 60%;
+      background-color: pink;
+      position: relative;
     }
 
     .overlay-text {
-        position: absolute;
-        top: 10%;
+      position: absolute;
+      top: 10%;
 
-        left: 100%;
-        transform: translate(-50%,-50%);
-        font-size: 24px;
-        font-weight: bold;
-        color: #333;
-        z-index: 99;
+      left: 100%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      z-index: 99;
     }
-
-</style>
-<body>
+  </style>
+  <body>
     <div class="board">
-        <div class="left">
-            <div class="overlay-text">
-                Overlay Text Absolute
-            </div>
-        </div>
-        <div class="right">
-
-        </div>
+      <div class="left">
+        <div class="overlay-text">Overlay Text Absolute</div>
+      </div>
+      <div class="right"></div>
     </div>
-</body>
+  </body>
 </html>

@@ -2,8 +2,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="output.css" />
+    
     <title>Ascent - Childcare & Kids School HTML Template</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/1cbbb02fe6.js" crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -11,8 +13,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="https://kit.fontawesome.com/1cbbb02fe6.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/icons/style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="output.css" />
   </head>
   <body>
     <header id="header" class="sticky top-0 transition-[top] duration-300 z-40" style="top: -160px;">
@@ -69,7 +77,7 @@
           </div>
         </div>
       </div>
-      <div class="header-navbar bg-white capitalize  bg-background transition-all duration-300 h-1/5 w-full">
+      <div class="header-navbar bg-white capitalize  transition-all duration-300 h-1/5 w-full">
           <div class="container py-5 translate-y-1/4">
               <div class="flex justify-between items-center">
                <div class="logo flex flex-grow items-center">
@@ -396,11 +404,11 @@
             <!-- card start -->
             <div class="sm:col-start-1 md:col-end-5 sm:col-end-7 col-span-full sm:row-span-2 relative group/card">
                 <img src="images/portfolio-1.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
-                <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-primary rounded-[10px] flex flex-col items-center justify-center">
-                    <h5 class="text-center"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
+                <div class="px-7.5 bg-second-color absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500  rounded-[10px] flex flex-col items-center justify-center">
+                    <h5 class="text-center text-[#fff]"><a href="" class="text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
                     <p class="text-cream-foreground">Dreamland Elementary</p>
-                    <a href="" class="bg-background w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
-                        <i class="fa-solid fa-arrow-right text-destructive-foreground" aria-hidden="true"></i>
+                    <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
+                        <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -408,11 +416,11 @@
             <!-- card start -->
             <div class="md:col-start-5 md:col-end-10 sm:col-start-7 sm:col-end-13 col-span-full relative group/card">
                 <img src="images/portfolio-2.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
-                <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-primary rounded-[10px] flex flex-col items-center justify-center">
-                    <h5 class="text-center"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
-                    <p class="text-cream-foreground">Dreamland Elementary</p>
-                    <a href="" class="bg-background w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
-                        <i class="fa-solid fa-arrow-right text-destructive-foreground" aria-hidden="true"></i>
+                <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
+                    <h5 class="text-center text-[#fff]"><a href="" class=" text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
+                    <p>Dreamland Elementary</p>
+                    <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
+                        <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -420,11 +428,11 @@
             <!-- card start -->
             <div class="md:col-start-10 sm:col-start-7 sm:col-end-13 col-span-full relative group/card">
                 <img src="images/portfolio-3.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
-                <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-primary rounded-[10px] flex flex-col items-center justify-center">
-                    <h5 class="text-center"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
+                <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
+                    <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
                     <p class="text-cream-foreground">Dreamland Elementary</p>
-                    <a href="" class="bg-background w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
-                        <i class="fa-solid fa-arrow-right text-destructive-foreground" aria-hidden="true"></i>
+                    <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
+                        <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -432,11 +440,11 @@
             <!-- card start -->
             <div class="md:col-start-5 md:col-end-9 sm:col-start-1 sm:col-end-7 col-span-full relative group/card">
                 <img src="images/portfolio-5.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
-                <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-primary rounded-[10px] flex flex-col items-center justify-center">
-                    <h5 class="text-center"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
+                <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
+                    <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
                     <p class="text-cream-foreground">Dreamland Elementary</p>
-                    <a href="" class="bg-background w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
-                        <i class="fa-solid fa-arrow-right text-destructive-foreground" aria-hidden="true"></i>
+                    <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
+                        <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -444,11 +452,11 @@
             <!-- card start -->
             <div class="md:col-start-9 sm:col-span-6 sm:col-end-13 col-span-full relative group/card">
                 <img src="images/portfolio-6.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
-                <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-primary rounded-[10px] flex flex-col items-center justify-center">
-                    <h5 class="text-center"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
+                <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
+                    <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
                     <p class="text-cream-foreground">Dreamland Elementary</p>
-                    <a href="" class="bg-background w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
-                        <i class="fa-solid fa-arrow-right text-destructive-foreground" aria-hidden="true"></i>
+                    <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
+                        <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -457,53 +465,170 @@
         <div data-target="school" class="grid lg:gap-7.5 gap-4 grid-cols-12 sm:grid-rows-[453px] absolute top-0 left-0 transition-all duration-500 translate-y-10 invisible opacity-0 target-card">
           <!-- card start -->
           <div class="sm:col-start-1 sm:col-end-8 col-span-full relative group/card max-h-[453px]">
-              <img src="assets/images/portfolio/portfolio-1.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
-              <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-primary rounded-[10px] flex flex-col items-center justify-center">
-                  <h5 class="text-center"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
+              <img src="images/portfolio-1.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+              <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
+                  <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
                   <p class="text-cream-foreground">Dreamland Elementary</p>
-                  <a href="" class="bg-background w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
-                      <i class="fa-solid fa-arrow-right text-destructive-foreground" aria-hidden="true"></i>
+                  <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
+                      <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
                   </a>
               </div>
           </div>
           <!-- card end -->
           <!-- card start -->
           <div class="sm:col-start-8 sm:col-end-13 col-span-full relative group/card max-h-[453px]">
-              <img src="assets/images/portfolio/portfolio-2.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
-              <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-primary rounded-[10px] flex flex-col items-center justify-center">
-                  <h5 class="text-center"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
+              <img src="images/portfolio-2.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+              <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
+                  <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
                   <p class="text-cream-foreground">Dreamland Elementary</p>
-                  <a href="" class="bg-background w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
-                      <i class="fa-solid fa-arrow-right text-destructive-foreground" aria-hidden="true"></i>
+                  <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
+                      <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
                   </a>
               </div>
           </div>
           <!-- card end -->
           <!-- card start -->
           <div class="sm:col-start-1 sm:col-end-7 col-span-full relative group/card max-h-[453px]">
-              <img src="assets/images/portfolio/portfolio-3.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
-              <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-primary rounded-[10px] flex flex-col items-center justify-center">
-                  <h5 class="text-center"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
+              <img src="images/portfolio-3.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+              <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
+                  <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
                   <p class="text-cream-foreground">Dreamland Elementary</p>
-                  <a href="" class="bg-background w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
-                      <i class="fa-solid fa-arrow-right text-destructive-foreground" aria-hidden="true"></i>
+                  <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
+                      <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
                   </a>
               </div>
           </div>
           <!-- card end -->
           <!-- card start -->
           <div class="sm:col-start-7 sm:col-end-13 col-span-full relative group/card max-h-[453px]">
-              <img src="assets/images/portfolio/portfolio-5.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
-              <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-primary rounded-[10px] flex flex-col items-center justify-center">
-                  <h5 class="text-center"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
+              <img src="images/portfolio-5.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+              <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
+                  <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
                   <p class="text-cream-foreground">Dreamland Elementary</p>
-                  <a href="" class="bg-background w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
-                      <i class="fa-solid fa-arrow-right text-destructive-foreground" aria-hidden="true"></i>
+                  <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
+                      <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
                   </a>
               </div>
           </div>
           <!-- card end -->
       </div>
+      <!-- learn -->
+      <div data-target="learn" class="grid lg:gap-7.5 gap-4 grid-cols-12 sm:grid-rows-[453px] absolute top-0 left-0 transition-all duration-500 translate-y-10 invisible opacity-0 target-card">
+        <!-- card start -->
+        <div class="sm:col-start-1 sm:col-end-7 col-span-full relative group/card max-h-[453px]">
+            <img src="images/portfolio-3.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+            <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
+                <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
+                <p class="text-cream-foreground">Dreamland Elementary</p>
+                <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
+                    <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <!-- card end -->
+        <!-- card start -->
+        <div class="sm:col-start-7 sm:col-end-13 col-span-full relative group/card max-h-[453px]">
+            <img src="images/portfolio-5.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+            <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
+                <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
+                <p class="text-cream-foreground">Dreamland Elementary</p>
+                <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
+                    <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <!-- card end -->
+      </div>
+      <!-- child -->
+      <div data-target="child" class="grid lg:gap-7.5 gap-4 grid-cols-12 sm:grid-rows-[453px] absolute top-0 left-0 transition-all duration-500 translate-y-10 invisible opacity-0 target-card">
+        <!-- card start -->
+        <div class="sm:col-start-1 sm:col-end-8 col-span-full relative group/card max-h-[453px]">
+            <img src="images/portfolio-1.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+            <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
+                <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
+                <p class="text-cream-foreground">Dreamland Elementary</p>
+                <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
+                    <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <!-- card end -->
+        <!-- card start -->
+        <div class="sm:col-start-8 sm:col-end-13 col-span-full relative group/card max-h-[453px]">
+            <img src="images/portfolio-2.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+            <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
+                <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
+                <p class="text-cream-foreground">Dreamland Elementary</p>
+                <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
+                    <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <!-- card end -->
+      </div>
+      <!-- coach -->
+      <div data-target="coaching" class="grid lg:gap-7.5 gap-4 grid-cols-12 grid-rows-[277px] absolute top-0 left-0 transition-all duration-500 translate-y-10 invisible opacity-0 target-card">
+        <!-- card start -->
+        <div class="sm:col-start-1 md:col-end-5 sm:col-end-7 col-span-full sm:row-span-2 relative group/card">
+            <img src="images/portfolio-1.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+            <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
+                <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
+                <p class="text-cream-foreground">Dreamland Elementary</p>
+                <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
+                    <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <!-- card end -->
+        <!-- card start -->
+        <div class="md:col-start-5 md:col-end-10 sm:col-start-7 sm:col-end-13 col-span-full relative group/card">
+            <img src="images/portfolio-2.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+            <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
+                <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
+                <p class="text-cream-foreground">Dreamland Elementary</p>
+                <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
+                    <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <!-- card end -->
+        <!-- card start -->
+        <div class="md:col-start-10 sm:col-start-7 sm:col-end-13 col-span-full relative group/card">
+            <img src="images/portfolio-3.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+            <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
+                <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
+                <p class="text-cream-foreground">Dreamland Elementary</p>
+                <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
+                    <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <!-- card end -->
+        <!-- card start -->
+        <div class="md:col-start-5 md:col-end-9 sm:col-start-1 sm:col-end-7 col-span-full relative group/card">
+            <img src="images/portfolio-5.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+            <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
+                <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
+                <p class="text-cream-foreground">Dreamland Elementary</p>
+                <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
+                    <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <!-- card end -->
+        <!-- card start -->
+        <div class="md:col-start-9 sm:col-span-6 sm:col-end-13 col-span-full relative group/card">
+            <img src="images/portfolio-6.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+            <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
+                <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
+                <p class="text-cream-foreground">Dreamland Elementary</p>
+                <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
+                    <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <!-- card end -->
+    </div>
         </div>
       </div>
     </section>
@@ -523,18 +648,87 @@
           </div>
           <div class="bg-[rgba(255,240,229,0.8)] absolute translate-[50%] right-0 top-0 z-[-9] w-full"> </div>
         </div> -->
-        <div class="board">
+        <div class="board flex h-[30vh] justify-between">
           <div class="left">
-              <div class="overlay-text">
-                  Overlay Text Absolute
+              <div class="overlay-text-left ">
+                <p class="text-general-title w-1/3">lastest service</p>
+                <h2 class="text-general-h2">Building a Str Foundation for Success</h2>
               </div>
           </div>
           <div class="right">
-  
+            <div class="overlay-text-right flex-shrink-0 flex-grow-0 basis-auto lg:w-[50%] w-1/2">
+              <p class="text-general-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit platea pharetra, nostra mattis hendrerit proin mollis pretium facilisi in, ligula volutpat</p>
+            </div>
           </div>
       </div>
+      <div class="lg:flex justify-between">
+        <div class="flex-shrink-0 flex-grow-0 basis-auto lg:w-[25%]">
+            <div class="relative lg:mt-7.5 mt-5">
+                <div class="service-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 3" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span></div>
+                <div class="lg:mt-10 mt-5">
+                    <a href="" class="px-7.5 py-5 border border-secondary rounded-md max-h-15 min-w-40 whitespace-nowrap btn group">Read More <i class="fa-solid fa-arrow-right text-secondary-foreground transition-all duration-500 group-hover:text-cream-foreground" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="flex-shrink-0 flex-grow-0 basis-auto lg:w-[70%] mt-6 lg:mt-0">
+          
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+       
+        </div>
+    </div>
+      <!-- <div class="lg:flex justify-between">
+        <div class="flex-shrink-0 flex-grow-0 basis-auto lg:w-[25%]">
+            <div class="relative lg:mt-7.5 mt-5">
+                <div class="service-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span></div>
+                <div class="lg:mt-10 mt-5">
+                    <a href="" class="px-7.5 py-5 border border-secondary rounded-md max-h-15 min-w-40 whitespace-nowrap btn group">Read More <i class="fa-solid fa-arrow-right text-secondary-foreground transition-all duration-500 group-hover:text-cream-foreground" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="flex-shrink-0 flex-grow-0 basis-auto lg:w-[70%] mt-6 lg:mt-0">
+          <div class="carousel-slider flex justify-center">
+            <div class="carousel-slider-item">
+              <div class="slider-content">
+                <i class="fa-solid fa-dice-d6"></i>
+                <p>App Mobile</p>
+              </div>
+            </div>
+            <div class="carousel-slider-item">
+              <div class="slider-content">
+                <i class="fa-solid fa-dice-d6"></i>
+                <p>App Mobile</p>
+              </div>
+            </div>
+            <div class="carousel-slider-item">
+              <div class="slider-content">
+                <i class="fa-solid fa-dice-d6"></i>
+                <p>App Mobile</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+    </div> -->
       </div>
-      <div class="px-16 animate-anime-img absolute">
+      <div class="px-16 animate-anime-img absolute top-2/3">
         <img src="images/man.png" alt="">
       </div>
     </section>
@@ -847,6 +1041,19 @@
         </div>
       </div>
     </section> -->
+    <script>
+      $(".carousel-slider").slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

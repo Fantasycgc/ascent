@@ -255,7 +255,7 @@ const partner_swiper = new Swiper('.partner-swiper', {
         }
     },
 });
-const service_swiper = new Swiper('.service-swiper', {
+const service_swiper = new Swiper('.swiper', {
     autoplay: {
         delay: 5000,
     },
