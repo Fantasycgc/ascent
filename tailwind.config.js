@@ -16,10 +16,22 @@ module.exports = {
         "anime-img": "anime-img 20s linear 0s 9999999999 normal both",
         "anime-circle1": "anime-circle1 20s linear 0s 9999999999 normal both",
         "anime-updown": "anime-updown 13s linear 0s 9999999999 normal both",
-        "anime-img2": "anime-img2 15s ease 0s 999999 normal forwards"
+        "anime-img2": "anime-img2 15s ease 0s 999999 normal forwards",
+        "fadeInUp": "fadeInUp 5s ease-out both"
 
       },
       keyframes: {
+        "fadeInUp": {
+          "from": {
+            opacity: 0,
+            transform: "translate3d(0, 50%, 0)"
+
+          },
+          "to": {
+            opacity: 1,
+            transform: "none"
+          }
+        },
         "anime-img": {
           "0%,100%": {
             transform: "translateX(0)",
