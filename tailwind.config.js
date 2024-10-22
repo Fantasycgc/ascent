@@ -2,11 +2,6 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-
-
-
-
-    
     container: {
       center: true
    },
@@ -16,7 +11,6 @@ module.exports = {
    },
    
     extend: {
-<<<<<<< HEAD
       borderRadius: {
         'xl': '50px' 
      },
@@ -82,11 +76,9 @@ module.exports = {
         '100%': { opacity: 1, transform: 'translateY(0)' },
        }
      },
-=======
       fontFamily: { 
         "nunito": ['Nunito', 'sans-serif'] 
     } 
->>>>>>> 98b8046d83ca4b256dab06537879f6983e74a5f6
     },
   },
   plugins: [],
