@@ -815,6 +815,11 @@ p {
   color: rgb(28 187 180 / var(--tw-text-opacity));
 }
 
+.txt-pink-color{
+  --tw-text-opacity: 1;
+  color: rgb(237 20 91 / var(--tw-text-opacity));
+}
+
 .bg-primary-color{
   --tw-bg-opacity: 1;
   background-color: rgb(115 190 72 / var(--tw-bg-opacity));
@@ -1149,8 +1154,8 @@ p {
   left: -0.625rem;
 }
 
-.-left-4{
-  left: -1rem;
+.-left-6{
+  left: -1.5rem;
 }
 
 .-right-full{
@@ -1211,6 +1216,10 @@ p {
 
 .top-0{
   top: 0px;
+}
+
+.top-1{
+  top: 0.25rem;
 }
 
 .top-1\/2{
@@ -2263,10 +2272,6 @@ p {
   font-family: Bubblegum Sans, sans-serif;
 }
 
-.font-jost{
-  font-family: Jost, sans-serif;
-}
-
 .font-nunito{
   font-family: Nunito, system-ui;
 }
@@ -2335,10 +2340,6 @@ p {
 
 .font-bold{
   font-weight: 700;
-}
-
-.font-extrabold{
-  font-weight: 800;
 }
 
 .font-medium{
@@ -2975,20 +2976,12 @@ p {
     left: 0px;
   }
 
-  .lg\:left-1\/4{
-    left: 25%;
-  }
-
   .lg\:left-24{
     left: 6rem;
   }
 
   .lg\:top-0{
     top: 0px;
-  }
-
-  .lg\:top-1{
-    top: 0.25rem;
   }
 
   .lg\:top-20{
@@ -3089,11 +3082,6 @@ p {
 
   .lg\:-translate-y-1\/2{
     --tw-translate-y: -50%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .lg\:translate-x-24{
-    --tw-translate-x: 6rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
