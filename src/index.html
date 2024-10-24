@@ -1,10 +1,11 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <title>Ascent - Childcare & Kids School HTML Template</title>
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon" />
     <script src="https://kit.fontawesome.com/1cbbb02fe6.js" crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
@@ -13,12 +14,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="assets/icons/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
-    
+<link rel="stylesheet" href="css/animate.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="output.css" />
   </head>
@@ -27,7 +29,7 @@
       <div id="header-container">
       <div id="header-information" class="header-information bg-[#ED145B] sm:block hidden ">
         <div class="container">
-          <div class="flex justify-between gap-2 py-[13px] text-[#ffff]">
+          <div class="flex lg:flex-row flex-col justify-between items-center gap-2 py-[13px] text-[#ffff]">
             <div>
               <ul class="flex justify-start gap-4">
                 <li>
@@ -43,23 +45,23 @@
                 <li>
                   <a href="mailto:info@example.com"
                     ><span class="pl-5"><i
-                      class="fa-solid fa-envelope font-nunito"
+                      class="fa-solid fa-envelope"
                       aria-hidden="true"
                     ></i></span>
-                  <span class="pl-5">info@example.com</span></a
+                  <span class="pl-5 font-nunito">info@example.com</span></a
                   >
                 </li>
                 <li>
                 </span class="pl-5"> <i
-                    class="fa-solid fa-location-dot font-nunito"
+                    class="fa-solid fa-location-dot"
                     aria-hidden="true"
                     ></span></i
-                  ><span class="pl-5">6391 Elgin St. Celina, 10299</span>
+                  ><span class="pl-5 font-nunito">6391 Elgin St. Celina, 10299</span>
                 </li>
               </ul>
             </div>
             <div>
-              <ul class="flex justify-end gap-[14px]">
+              <ul class="flex lg:flex-row justify-end gap-[14px]">
                 <li>
                   <a href="index.html" class="rounded-head-social"><i class="fa-brands fa-facebook-f " aria-hidden="true"></i></a>
                 </li>
@@ -77,26 +79,26 @@
           </div>
         </div>
       </div>
-      <div class="header-navbar bg-white capitalize  transition-all duration-300 h-1/5 w-full">
-          <div class="container py-5 translate-y-1/4">
+      <div class="header-navbar bg-white capitalize  transition-all duration-300 h-auto w-full">
+          <div class="container py-5 translate-y-1/6">
               <div class="flex justify-between items-center">
                <div class="logo flex flex-grow items-center">
-                  <img src="images/logo.png" alt="">
+                  <img src="assets/images/logo.png" alt="">
                   <h2 class="pl-3 font-bold text-3xl font-nunito ">ascent</h2>
                </div>
                <div class="nav text-black capitalize pr-56">
-                <ul class="flex justify-center items-center gap-[25px] font-bold">
-                  <li><a href="#">home<i class="fa-solid fa-chevron-down"></i></a></li>
-                  <li><a href="#">about us</a></li>
-                  <li><a href="#">service<i class="fa-solid fa-chevron-down"></i></a></li>
-                  <li><a href="#">blog<i class="fa-solid fa-chevron-down"></i></a></li> 
-                  <li><a href="#">page<i class="fa-solid fa-chevron-down"></i></a></li>
-                  <li><a href="#">contact us</a></li>
+                <ul class="hidden xl:flex justify-center items-center gap-[25px] font-bold">
+                  <li class="hover:text-[#F7941E] transition-all duration-300"><a href="#">home<i class="fa-solid fa-chevron-down"></i></a></li>
+                  <li class="hover:text-[#F7941E] transition-all duration-300"><a href="#">about us</a></li>
+                  <li class="hover:text-[#F7941E] transition-all duration-300"><a href="#">service<i class="fa-solid fa-chevron-down"></i></a></li>
+                  <li class="hover:text-[#F7941E] transition-all duration-300"><a href="#">blog<i class="fa-solid fa-chevron-down"></i></a></li> 
+                  <li class="hover:text-[#F7941E] transition-all duration-300"><a href="#">page<i class="fa-solid fa-chevron-down"></i></a></li>
+                  <li class="hover:text-[#F7941E] transition-all duration-300"><a href="#">contact us</a></li>
                 </ul>
                </div>
                <div class="flex justify-center items-center gap-6 ">
                 <div class="search-btn cursor-pointer">
-                  <i class="fa-solid fa-magnifying-glass " aria-hidden="true"></i>
+                  <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
                 </div>
                 
                 <!-- <button class="btn relative inline-flex items-center justify-start overflow-hidden font-medium transition-all  bg-[rgba(28,187,180,1)] rounded hover:bg-[rgba(28,187,180,1)] group py-1.5 px-2.5">
@@ -104,12 +106,14 @@
                   <span class="relative w-full text-left  transition-colors duration-300 ease-in ">Button Hover</span>
                   <span><i class="relative fa-solid fa-arrow-right" style="color: white;"></i></span>
                   </button> -->
-
-                <a href="#">  <button class=" hover:before:bg-primary-color relative h-[50px] w-40 overflow-hidden rounded bg-fourth-color capitalize px-3 text-[#fff]  transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-primary-color before:transition-all before:duration-500   hover:before:left-0 hover:before:w-full">
+                  <a href="contact.html" class="bg-fourth-color text-cream-foreground rounded-md sm:flex hidden items-center gap-2.5  btn after:bg-primary-color"> 
+                    Get A Quote 
+                    <span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span> </a>
+                <!-- <a href="#" class="bg-secondary text-cream-foreground rounded-md sm:flex hidden items-center gap-2.5  btn after:bg-green">  <button class=" hover:before:bg-primary-color relative h-[50px] w-40 overflow-hidden rounded bg-fourth-color capitalize px-3 text-[#fff]  transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-primary-color before:transition-all before:duration-500   hover:before:left-0 hover:before:w-full">
                     <span class="relative z-10">get a quote</span>
                     <span><i class="relative fa-solid fa-arrow-right" style="color: white;"></i></span>
-                  </button></a>
-                  
+                  </button></a> -->
+                 <span class="xl:hidden"><i class="fa-solid fa-bars fa-xl"></i></span> 
                </div>
 
               </div>
@@ -126,12 +130,15 @@
     </header>
     <section id="explore-mind" class="bg-general relative pt-[78px]">
         <div class="container relative">
-          <div class="flex justify-center text-center items-center flex-col relative">
+          <div class="flex justify-center text-center items-center flex-col relative z-10">
             <h1 class="font-normal justify-center text-center xl:text-[70px] lg:text-6xl md:text-5xl text-4xl xl:leading-[128%] lg:leading-[125%] md:leading-[120%] max-w-[776px]">
-              <span class="relative font-jost items-center pl-16">Exploring Minds
-                
+              <span class="relative font-jost">Exploring Minds
+                <span class="absolute lg:left-1/4 lg:translate-x-24  lg:top-1 text-xl top-0 -left-4"> 
+                  <i class="icon-three-line"></i>
+                  <!-- <img src="assets//images/shap-1.png" alt="" class="w-6 h-6"> -->
+                </span>
               </span>
-              <span class="absolute top-0 left-[25.75rem] "><img src="images/shap-1.png" alt="" class="w-6 h-6"></span>
+              
               <span class="font-extrabold font-jost">Elementary </span>
               <span class="text-[#ED145B] font-bold font-jost">School </span>
               
@@ -149,160 +156,179 @@
             
          </div>
 
-         <div><img src="images/painting.png" alt=""></div>
-         <div class="absolute top-0 left-0 animate-anime-updown"><img src="images/boy_img_1.png" alt="">
+         <div><img src="assets//images/painting.png" alt=""></div>
+         <div class="absolute lg:top-0 lg:left-0 animate-anime-updown hidden sm:block left-4.5 top-7"><img src="assets//images/boy_img_1.png" alt="">
           <span class="absolute -left-2.5 top-[9px] border-2 border-[#F7941E] rounded-[125px] max-h-[369px] w-full h-full"></span>
         </div>
-         <div class="absolute right-0 bottom-[80px] animate-anime-updown"><img src="images/boy_img_2.png" alt="">
+         <div class="absolute right-0 bottom-[80px] animate-anime-updown hidden lg:block"><img src="assets//images/boy_img_2.png" alt="">
           <span class="absolute -left-2.5 top-[9px] border-2 border-[#1CBBB4] rounded-[125px] max-h-[369px] w-full h-full"></span>
         </div>
         <div class="flex absolute right-[87px] top-14 animate-anime-img2">
-          <img src="images/shap.png" alt="" class="w-7.5 h-12.5 relative top-9">
-          <img src="images/shap.png" alt="">
-          <img src="images/shap.png" alt="" class="w-5 h-8 -mt-7">
+          <img src="assets/images/shap.png" alt="" class="w-7.5 h-12.5 relative top-9">
+          <img src="assets/images/shap.png" alt="">
+          <img src="assets/images/shap.png" alt="" class="w-5 h-8 -mt-7">
         
         </div>
          
         </div>
-        <div class="absolute left-0 top-[60px] animate-anime-circle1"><img src="images/left-circle-1.png" alt=""></div>
-        <div class="absolute top-[186px] left-[37px] animate-anime-circle1"><img src="images/left-circle-2.png" alt="" class=""></div>
-        <div class="absolute right-0 bottom-[165px] animate-anime-updown"><img src="images/right-circle.png" alt=""></div>
-        
+        <div class="hidden lg:block">
+          <div class="absolute left-0 top-[60px] animate-anime-circle1"><img src="assets/images/left-circle-1.png" alt=""></div>
+          <div class="absolute top-[186px] left-[37px] animate-anime-circle1"><img src="assets/images/left-circle-2.png" alt="" class=""></div>
+          <div class="absolute right-0 bottom-[165px] animate-anime-updown"><img src="assets/images/right-circle.png" alt=""></div>
+        </div>
+       
 
 
     </section>
-    <section id="number-talk" class="my-24">
-      <div class="container flex justify-between gap-6">
-        <div class="number-talk-left w-2/5 relative">
-          <p class="capitalize text-[#F7941E] text-[19px] font-medium font-Bubblegum-Sans">number talks</p>
-          <h3 class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] lg:max-w-[410px] pb-5">Invest in education invest in the future</h3>
-          <p class="text-[#686868]">Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum facilisis sem. Imperdiet massa turpis sit proin metus volutpat loren ipsum Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum</p>
-          
-          <button class="btn relative inline-flex text-black items-center justify-start overflow-hidden font-medium transition-all border bg-white rounded hover:bg-white group py-3 px-7 my-10">
-            <span class="w-56 h-48 rounded bg-[#73BE48] absolute bottom-0 left-0 translate-x-full ease-out duration-700 transition-all translate-y-full mb-9 ml-[-30rem] group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-            <span class="relative w-full text-left  transition-colors duration-500 ease-in-out group-hover:text-white">Get a quote</span>
-            </button>
+    <section id="number-talk" class="lg:pt-15 pt-10 lg:pb-15 pb-10">
+      <div class="container">
+        <div class="number-talk-left grid xl:grid-cols-2 lg:grid-cols-[40%_auto] grid-cols-1 gap-7.5 relative">
+          <div class="lg:max-w-[600px]">
+            <p class="capitalize text-[#F7941E] text-[19px] font-medium font-Bubblegum-Sans wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-name: fadeInUp;">number talks</p>
+            <h3 class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] lg:max-w-[410px] pb-5 wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">Invest in education invest in the future</h3>
+            <p class="text-[#686868] wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum facilisis sem. Imperdiet massa turpis sit proin metus volutpat loren ipsum Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum</p>
+            
+            <button class="btn relative inline-flex text-black items-center justify-start overflow-hidden font-medium transition-all border animate-fadeInUp bg-white rounded hover:bg-white group py-3 px-7 my-10">
+              <span class="w-56 h-48 rounded bg-[#73BE48] absolute bottom-0 left-0 translate-x-full ease-out duration-700 transition-all translate-y-full mb-9 ml-[-30rem] group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+              <span class="relative w-full text-left  transition-colors duration-500 ease-in-out group-hover:text-white">Get a quote</span>
+              </button>
+          </div>
+          <div class="number-talk-right  grid sm:grid-cols-2 grid-cols-1 gap-7 items-center">
+            <div class="rounded-lg border border-gray-200 px-[18px] lg:py-7.5 py-5 flex items-center gap-5 wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+              <div class="rounded-full border bg-[#F7941E] lg:w-20 lg:h-20 w-16 h-16 flex justify-center items-center">
+                <i class="icon-kindergarden lg:text-[40px] text-2xl" style="color: #fff;"></i>
+              </div>
+             <div class="px-3">
+                <h4 class="font-bold lg:text-[32px] md:text-[28px] text-2xl">20K</h4>
+                <p>Running Students</p>
+             </div>
+            </div>
+            <div class="rounded-lg border border-gray-200 px-[18px] lg:py-7.5 py-5 flex items-center gap-5 wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+              <div class="rounded-full border bg-[#ED145B] lg:w-20 lg:h-20 w-16 h-16 flex justify-center items-center">
+                <i class="icon-book lg:text-[40px] text-3xl" style="color: #fff;"></i>
+              </div>
+             <div class="px-3">
+                <h4 class="font-bold lg:text-[32px] md:text-[28px] text-2xl">13K</h4>
+                <p>Completed</p>
+             </div>
+            </div>
+            <div class="rounded-lg border border-gray-200 px-[18px] lg:py-7.5 py-5 flex items-center gap-5 wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+              <div class="rounded-full border bg-[#73BE48] lg:w-20 lg:h-20 w-16 h-16 flex justify-center items-center">
+                <i class="icon-blocks lg:text-[40px] text-3xl" style="color: #fff;"></i>
+              </div>
+             <div class="px-3">
+                <h4 class="font-bold lg:text-[32px] md:text-[28px] text-2xl">3K</h4>
+                <p>Award Winning</p>
+             </div>
+            </div>
+            <div class="rounded-lg border border-gray-200 px-[18px] lg:py-7.5 py-5 flex items-center gap-5 wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+              <div class="rounded-full border bg-[#1CBBB4] lg:w-20 lg:h-20 w-16 h-16 flex justify-center items-center">
+                <i class="icon-book lg:text-[40px] text-3xl text-cream-foreground" style="color: #fff;"></i>
+              </div>
+             <div class="px-3">
+                <h4 class="font-bold lg:text-[32px] md:text-[28px] text-2xl">13K</h4>
+                <p>Guardian Satishfaction</p>
+             </div>
+            </div>
+          </div>
 
         </div>
-        <div class="number-talk-right  grid grid-cols-2 items-center gap-7">
-          <div class="rounded border flex items-center py-10 px-7">
-            <div class="rounded-full border bg-[#F7941E] w-16 h-16 flex justify-center items-center">
-              <i class="fa-solid fa-book fa-2xl" style="color: #fff;"></i>
-            </div>
-           <div class="px-3">
-              <h4 class="font-bold lg:text-[32px] md:text-[28px] text-2xl">20K</h4>
-              <p>Running Students</p>
-           </div>
-          </div>
-          <div class="rounded border flex items-center py-10 px-7">
-            <div class="rounded-full border bg-[#ED145B] w-16 h-16 flex justify-center items-center">
-              <i class="fa-solid fa-book fa-2xl" style="color: #fff;"></i>
-            </div>
-           <div class="px-3">
-              <h4 class="font-bold lg:text-[32px] md:text-[28px] text-2xl">13K</h4>
-              <p>Completed</p>
-           </div>
-          </div>
-          <div class="rounded border flex items-center py-10 px-7">
-            <div class="rounded-full border bg-[#73BE48] w-16 h-16 flex justify-center items-center">
-              <i class="fa-solid fa-book fa-2xl" style="color: #fff;"></i>
-            </div>
-           <div class="px-3">
-              <h4 class="font-bold lg:text-[32px] md:text-[28px] text-2xl">3K</h4>
-              <p>Award Winning</p>
-           </div>
-          </div>
-          <div class="rounded border flex items-center py-10 px-7">
-            <div class="rounded-full border bg-[#1CBBB4] w-16 h-16 flex justify-center items-center">
-              <i class="fa-solid fa-book fa-2xl" style="color: #fff;"></i>
-            </div>
-           <div class="px-3">
-              <h4 class="font-bold lg:text-[32px] md:text-[28px] text-2xl">13K</h4>
-              <p>Guardian Satishfaction</p>
-           </div>
-          </div>
-        </div>
+   
       </div>
     </section>
-    <section id="about-us" class="pb-10">
+    <section id="about-us" class="lg:pt-15 pt-10 lg:pb-15 pb-10">
       <div class="container">
         <div class="grid lg:grid-cols-[60%_40%] grid-cols-1 items-center">
-          <div class="about-us-left flex items-center gap-6 relative">
-            <div class="">
-              <div><img src="images/shap-1.png" alt="" ></div>
-              <div class="ml-9"><img src="images/about-1.png" alt=""></div>
-            </div>
-            <div class="flex sm:flex-col gap-8 absolute bottom-0 right-44">
-              <div class="bg-general flex flex-col rounded-[10px] p-5 items-center text-center">
-                <img src="images/icreement.png" alt="">
-                <h2 class="font-bold font-[16px]">Academy</h2>
-                <p>Learning Ladder School</p>
+          <div class="about-us-left relative">
+            <div class="flex sm:flex-row flex-col sm:items-end gap-6">
+              <div class="wow fadeInUp" data-wow-delay="1200" style="visibility: visible; animation-name: fadeInUp;">
+                <div><img src="assets/images/shap-1.png" alt="" ></div>
+                <div class="ml-9"><img src="assets/images/about-1.png" alt=""></div>
+  
               </div>
-              <div class="flex flex-col justify-center rounded border border-transparent shadow-2xl p-5 items-start bg-white">
-                <h2 class="text-[32px] font-bold text-[#1CBBB4] ">10+</h2>
-                <p>Learning Ladder School</p>
+             
+              <div class="flex sm:flex-col gap-8">
+                <div class="bg-general max-w-[212px] rounded-[11px] px-5 pt-[22px] pb-6 flex flex-col items-center justify-center text-center animate-fadeInUp">
+                  <img src="assets/images/icreement.png" alt="">
+                  <h2 class="font-bold font-[16px] ">Academy</h2>
+                  <p>Learning Ladder School</p>
+                </div>
+                <div class="max-w-[212px] rounded-[11px] px-5 pt-[22px] pb-6 flex flex-col justify-center drop-shadow-[0px_4.8px_24.4px_rgba(19,16,34,0.10)] bg-white animate-fadeInUp">
+                  <h2 class="text-[32px] font-bold text-[#1CBBB4] ">10+</h2>
+                  <p>Learning Ladder School</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="about-us-right">
-             <div>
-                <p class="capitalize text-[#73BE48] font-Bubblegum-Sans font-bold text-[19px]">about us</p>
-                <h2 class="font-bold text-[32px]">Unlocking Potential, One Child at a just Time in school</h2>
-                <p>Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum facilisis sem. Imperdiet massa turpis sit proin metus volutpat loren ipsum Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum</p>
-                <button class="btn relative inline-flex text-black items-center justify-start overflow-hidden font-medium transition-all border bg-white rounded hover:bg-white group py-3 px-7 my-10">
+          <div class="about-us-right lg:max-w-[439px] pt-7.5">
+                <p class="capitalize text-[#1CBBB4] font-Bubblegum-Sans font-bold text-[19px]  wow fadeInUp pt-10" style="visibility: visible; animation-name: fadeInUp;">about us</p>
+                <h2 class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] pb-5 wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">Unlocking Potential, One Child at a just Time in school</h2>
+                <p class="wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum facilisis sem. Imperdiet massa turpis sit proin metus volutpat loren ipsum Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum</p>
+                <button class="btn relative inline-flex animate-fadeInUp text-black items-center justify-start overflow-hidden font-medium transition-all border bg-white rounded hover:bg-white group py-3 px-7 my-10 wow fadeInUp"  data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
                   <span class="w-56 h-48 rounded bg-fourth-color absolute bottom-0 left-0 translate-x-full ease-out duration-700 transition-all translate-y-full mb-9 ml-[-30rem] group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
                   <span class="relative w-full text-left  transition-colors duration-500 ease-in-out group-hover:text-white">Get a quote</span>
                   </button>
-             </div> 
-
           </div>
 
         </div>
     </section>
-    <section id="education-programs" class="pt-10 relative">
+    <section id="education-programs" class="lg:pt-15 lg:pb-15 pb-10 pt-10 relative">
       <div class="container">
         <div class="education-head flex flex-col justify-center items-center text-center">
-          <p class="font-bold text-[18px] text-[#73BE48] capitalize">educational programs</p>
-          <h2 class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] lg:max-w-[630px]">Strong Foundation for Success For Nurturing Curiosityl</h2>
+          <p class="font-bold text-[18px] text-[#73BE48] capitalize wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">educational programs</p>
+          <h2 class="font-bold lg:text-[32px] md:text-[28px] text-2xl wow fadeInUp lg:leading-[130%] md:leading-[120%] leading-[110%] lg:max-w-[630px]" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">Strong Foundation for Success For Nurturing Curiosityl</h2>
         </div>
-        <div class="education-detail">
-            <div class="grid grid-cols-2 gap-y-7 gap-x-5 pt-10">
-              <div class="education-programs-dtl group">
-                <h4 class="education-program-title">online class</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit platea the ,osr of a proin mollis pretium facilisi in, ligula volutpat</p>
-                <a href="#" class="group/btn capitalize">
-                  <span class="education-btn">read more</span> 
-                  <span><i class="fa-solid fa-arrow-right pl-1 education-btn education-btn-animate "></i></span>
-                </a>
-                <div class="education-programs-img">
-                  <i class="fa-solid fa-car-side"></i>
+        <div class="education-detail lg:pl-11">
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-y-7 lg:gap-x-[74px] gap-x-5 lg:pt-15 pt-10">
+              <div class="education-programs-dtl group wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                <div class="education-programs-img md:max-w-[88px] max-w-[70px] w-full max-h-[88px] flex justify-center items-center rounded-[10px] border border-[#F2F2F2] bg-background sm:p-[14px] p-2.5 static lg:absolute -left-11 top-1/2 lg:-translate-y-1/2 transition-all duration-500 txt-green-color group-hover/card:bg-primary-color group-hover/card:text-cream-foreground">
+                  <i class="icon-car-toy md:text-6xl text-[40px]"></i>
                 </div>
-              </div>
-              <div class="education-programs-dtl group ">
-                <h4 class="education-program-title">Formal Tuition</h4>
+                <div class="lg:pl-11 mt-4 lg:mt-0">
+                  <h4 class="education-program-title">online class</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit platea the ,osr of a proin mollis pretium facilisi in, ligula volutpat</p>
                 <a href="#" class="group/btn capitalize">
                   <span class="education-btn">read more</span> 
                   <span><i class="fa-solid fa-arrow-right pl-1 education-btn education-btn-animate "></i></span>
                 </a>
-                <div class="education-programs-img">
-                  <i class="fa-solid fa-car-side"></i>
                 </div>
+ 
               </div>
-              <div class="education-programs-dtl group ">
-                <h4 class="education-program-title">Preschool</h4>
+              <div class="education-programs-dtl group wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                <div class="education-programs-img md:max-w-[88px] max-w-[70px] w-full max-h-[88px] flex justify-center items-center rounded-[10px] border border-[#F2F2F2] bg-background sm:p-[14px] p-2.5 static lg:absolute -left-11 top-1/2 lg:-translate-y-1/2 transition-all duration-500 txt-green-color group-hover/card:bg-primary-color group-hover/card:text-cream-foreground">
+                  <i class="icon-toys md:text-6xl text-[40px]"></i>
+                </div>
+                <div class="lg:pl-11 mt-4 lg:mt-0">
+                  <h4 class="education-program-title">Formal Tuition</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit platea the ,osr of a proin mollis pretium facilisi in, ligula volutpat</p>
                 <a href="#" class="group/btn capitalize">
                   <span class="education-btn">read more</span> 
                   <span><i class="fa-solid fa-arrow-right pl-1 education-btn education-btn-animate "></i></span>
                 </a>
-                <div class="education-programs-img">
-                  <i class="fa-solid fa-car-side"></i>
+                </div>
+
+              </div>
+              <div class="education-programs-dtl group wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                <div class="education-programs-img md:max-w-[88px] max-w-[70px] w-full max-h-[88px] flex justify-center items-center rounded-[10px] border border-[#F2F2F2] bg-background sm:p-[14px] p-2.5 static lg:absolute -left-11 top-1/2 lg:-translate-y-1/2 transition-all duration-500 txt-green-color group-hover/card:bg-primary-color group-hover/card:text-cream-foreground">
+                  <i class="icon-feeder md:text-6xl text-[40px]"></i>
+                </div>
+                <div class="lg:pl-11 mt-4 lg:mt-0">
+                  <h4 class="education-program-title">Preschool</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit platea the ,osr of a proin mollis pretium facilisi in, ligula volutpat</p>
+                  <a href="#" class="group/btn capitalize">
+                    <span class="education-btn">read more</span> 
+                    <span><i class="fa-solid fa-arrow-right pl-1 education-btn education-btn-animate "></i></span>
+                  </a>
+                </div>
+                
        
-                </div>
               </div>
-              <div class="education-programs-dtl group ">
-                <h4 class="education-program-title">Special Tuition</h4>
+              <div class="education-programs-dtl group wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                <div class="education-programs-img md:max-w-[88px] max-w-[70px] w-full max-h-[88px] flex justify-center items-center rounded-[10px] border border-[#F2F2F2] bg-background sm:p-[14px] p-2.5 static lg:absolute -left-11 top-1/2 lg:-translate-y-1/2 transition-all duration-500 txt-green-color group-hover/card:bg-primary-color group-hover/card:text-cream-foreground">
+                  <i class="icon-feeder md:text-6xl text-[40px]"></i>
+                </div>
+                <div class="lg:pl-11 mt-4 lg:mt-0">
+                  <h4 class="education-program-title">Special Tuition</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit platea the ,osr of a proin mollis pretium facilisi in, ligula volutpat</p>
                 <a href="#" class="group/btn capitalize">
                   <span class="education-btn">read more</span> 
@@ -311,102 +337,40 @@
                   
                   </span>
                 </a>
-                <div class="education-programs-img ">
-                  <i class="fa-solid fa-car-side"></i>
                 </div>
+
               </div>
             </div>
 
         </div>
       </div>
-      <div class="absolute top-5 right-10 animate-anime-img">
-        <img src="images/pencil-rocket.png" alt="">
+      <div class="absolute top-5 right-10 z-[-1] lg:max-w-full max-w-36 md:block hidden animate-anime-img">
+        <img src="assets/images/pencil-rocket.png" alt="pencil-rocket" class="w-full h-auto">
       </div>
     </section>
 
-    <section id="lastest-porfolio" class="py-20">
+    <section id="lastest-porfolio" class="lg:pt-15 lg:pb-15 pt-10 pb-10 lastest-porfolio">
       <div class="container">
         <div class="lastest-head flex flex-col items-center text-center">
-          <p class="text-general-title">Latest Portfolio</p>
-          <h2 class="text-general-h2">Exploring Minds Elementary School Education the only school</h2>
-          <div class="flex justify-center gap-7 capitalize">
-            <p class="lastest-btn bg-[#F7941E] text-[#fff] target-tab" data-target="education">education</p>
-            <p class="lastest-btn target-tab" data-target="school">school</p>
-            <p class="lastest-btn target-tab" data-target="learn">learn</p>
-            <p class="lastest-btn target-tab" data-target="child">child</p>
-            <p class="lastest-btn target-tab" data-target="coaching">coaching</p>
+          <p class="text-general-title wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Latest Portfolio</p>
+          <h2 class="text-general-h2 wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">Exploring Minds Elementary School Education the only school</h2>
+          <div class="flex justify-center gap-7 capitalize pt-10">
+            <p class="active-tab target-tab" data-target="education">education</p>
+            <p class="target-tab" data-target="school">school</p>
+            <p class="target-tab" data-target="learn">learn</p>
+            <p class="target-tab" data-target="child">child</p>
+            <p class="target-tab" data-target="coaching">coaching</p>
           </div>
         </div>
-        <div class="lastest-detail">
-          <!-- <div class="grid grid-col-12 gap-4 relative top-0 left-0 text-[#fff]">
-            <div class="col-start-1 col-end-5 row-span-2 col-span-full relative">
-              <img src="images/portfolio-1.png" alt="" class="rounded-[10px]">
-              <div class="px-7.5 bg-second-color rounded-[10px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center w-[calc(100%-60px)] h-[calc(100%-60px)] opacity-0 hover:opacity-80 transition-all duration-500">
-                <h5 class="text-center">
-                  <a href="" class="text-3xl font-medium">Exploring Minds Elementary Best School</a>
-                  </h5>
-                <p class="text-[#FFF]">Dreamland Elementary</p>
-                <a href="" class="rounded-full bg-white opacity-80 w-10 h-10 flex justify-center items-center absolute -bottom-5 left-1/2 -translate-x-1/2 cursor-pointer">
-                  <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-            <div class="col-start-5 col-end-10 col-span-full relative">
-              <img src="images/portfolio-2.png" alt="" class="rounded-[10px]">
-              <div class="px-7.5 bg-second-color rounded-[10px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center w-[calc(100%-60px)] h-[calc(100%-60px)] opacity-0 hover:opacity-80 transition-all duration-500">
-                <h5 class="text-center">
-                  <a href="" class="text-3xl font-medium">Exploring Minds Elementary Best School</a>
-                  </h5>
-                <p class="text-[#FFF]">Dreamland Elementary</p>
-                <a href="" class="rounded-full bg-white opacity-80 w-10 h-10 flex justify-center items-center absolute -bottom-5 left-1/2 -translate-x-1/2 cursor-pointer">
-                  <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-            <div class="col-start-10 col-end-12 col-span-full relative">
-              <img src="images/portfolio-3.png" alt="" class="rounded-[10px]">
-              <div class="px-7.5 bg-second-color rounded-[10px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center w-[calc(100%-60px)] h-[calc(100%-60px)] opacity-0 hover:opacity-80 transition-all duration-500">
-                <h5 class="text-center">
-                  <a href="" class="text-3xl font-medium">Exploring Minds Elementary Best School</a>
-                  </h5>
-                <p class="text-[#FFF]">Dreamland Elementary</p>
-                <a href="" class="rounded-full bg-white opacity-80 w-10 h-10 flex justify-center items-center absolute -bottom-5 left-1/2 -translate-x-1/2 cursor-pointer">
-                  <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-            <div class="col-start-5 col-end-7 col-span-full relative">
-              <img src="images/portfolio-5.png" alt="" class="rounded-[10px]">
-              <div class="px-7.5 bg-second-color rounded-[10px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center w-[calc(100%-60px)] h-[calc(100%-60px)] opacity-0 hover:opacity-80 transition-all duration-500">
-                <h5 class="text-center">
-                  <a href="" class="text-3xl font-medium">Exploring Minds Elementary Best School</a>
-                  </h5>
-                <p class="text-[#FFF]">Dreamland Elementary</p>
-                <a href="" class="rounded-full bg-white opacity-80 w-10 h-10 flex justify-center items-center absolute -bottom-5 left-1/2 -translate-x-1/2 cursor-pointer">
-                  <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-            <div class="col-start-7 col-end-12 col-span-full relative">
-              <img src="images/portfolio-6.png" alt="" class="rounded-[10px]">
-              <div class="px-7.5 bg-second-color rounded-[10px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center w-[calc(100%-60px)] h-[calc(100%-60px)] opacity-0 hover:opacity-80 transition-all duration-500">
-                <h5 class="text-center">
-                  <a href="" class="text-3xl font-medium">Exploring Minds Elementary Best School</a>
-                  </h5>
-                <p class="text-[#FFF]">Dreamland Elementary</p>
-                <a href="" class="rounded-full bg-white opacity-80 w-10 h-10 flex justify-center items-center absolute -bottom-5 left-1/2 -translate-x-1/2 cursor-pointer">
-                  <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-          </div> -->
+        <div class="lastest-detail wow fadeInUp" data-wow-delay=".3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
+         
           <div data-target="education" class="grid lg:gap-7.5 gap-4 grid-cols-12 grid-rows-[277px] relative top-0 left-0 transition-all duration-500 translate-y-0 target-card">
             <!-- card start -->
             <div class="sm:col-start-1 md:col-end-5 sm:col-end-7 col-span-full sm:row-span-2 relative group/card">
-                <img src="images/portfolio-1.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+                <img src="assets/images/portfolio-1.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
                 <div class="px-7.5 bg-second-color absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500  rounded-[10px] flex flex-col items-center justify-center">
-                    <h5 class="text-center text-[#fff]"><a href="" class="text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
-                    <p class="text-cream-foreground">Dreamland Elementary</p>
+                    <h5 class="text-center text-[#fff]"><a href="" class="text-2xl font-medium">Exploring Minds Elementary Best School</a></h5>
+                    <p class="">Dreamland Elementary</p>
                     <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
                         <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
                     </a>
@@ -415,9 +379,9 @@
             <!-- card end -->
             <!-- card start -->
             <div class="md:col-start-5 md:col-end-10 sm:col-start-7 sm:col-end-13 col-span-full relative group/card">
-                <img src="images/portfolio-2.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+                <img src="assets/images/portfolio-2.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
                 <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
-                    <h5 class="text-center text-[#fff]"><a href="" class=" text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
+                    <h5 class="text-center text-[#fff]"><a href="" class=" text-2xl font-medium">Exploring Minds Elementary Best School</a></h5>
                     <p>Dreamland Elementary</p>
                     <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
                         <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
@@ -427,10 +391,10 @@
             <!-- card end -->
             <!-- card start -->
             <div class="md:col-start-10 sm:col-start-7 sm:col-end-13 col-span-full relative group/card">
-                <img src="images/portfolio-3.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+                <img src="assets/images/portfolio-3.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
                 <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
-                    <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
-                    <p class="text-cream-foreground">Dreamland Elementary</p>
+                    <h5 class="text-center text-[#fff]"><a href="" class=" text-2xl font-medium">Exploring Minds Elementary Best School</a></h5>
+                    <p class="">Dreamland Elementary</p>
                     <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
                         <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
                     </a>
@@ -439,10 +403,10 @@
             <!-- card end -->
             <!-- card start -->
             <div class="md:col-start-5 md:col-end-9 sm:col-start-1 sm:col-end-7 col-span-full relative group/card">
-                <img src="images/portfolio-5.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+                <img src="assets/images/portfolio-5.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
                 <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
-                    <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
-                    <p class="text-cream-foreground">Dreamland Elementary</p>
+                    <h5 class="text-center text-[#fff]"><a href="" class=" text-2xl font-medium">Exploring Minds Elementary Best School</a></h5>
+                    <p class="">Dreamland Elementary</p>
                     <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
                         <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
                     </a>
@@ -451,10 +415,10 @@
             <!-- card end -->
             <!-- card start -->
             <div class="md:col-start-9 sm:col-span-6 sm:col-end-13 col-span-full relative group/card">
-                <img src="images/portfolio-6.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+                <img src="assets/images/portfolio-6.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
                 <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
-                    <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
-                    <p class="text-cream-foreground">Dreamland Elementary</p>
+                    <h5 class="text-center text-[#fff]"><a href="" class=" text-2xl font-medium">Exploring Minds Elementary Best School</a></h5>
+                    <p class="">Dreamland Elementary</p>
                     <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
                         <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
                     </a>
@@ -465,10 +429,10 @@
         <div data-target="school" class="grid lg:gap-7.5 gap-4 grid-cols-12 sm:grid-rows-[453px] absolute top-0 left-0 transition-all duration-500 translate-y-10 invisible opacity-0 target-card">
           <!-- card start -->
           <div class="sm:col-start-1 sm:col-end-8 col-span-full relative group/card max-h-[453px]">
-              <img src="images/portfolio-1.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+              <img src="assets/images/portfolio-1.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
               <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
-                  <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
-                  <p class="text-cream-foreground">Dreamland Elementary</p>
+                  <h5 class="text-center text-[#fff]"><a href="" class=" text-2xl font-medium">Exploring Minds Elementary Best School</a></h5>
+                  <p class="">Dreamland Elementary</p>
                   <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
                       <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
                   </a>
@@ -477,10 +441,10 @@
           <!-- card end -->
           <!-- card start -->
           <div class="sm:col-start-8 sm:col-end-13 col-span-full relative group/card max-h-[453px]">
-              <img src="images/portfolio-2.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+              <img src="assets/images/portfolio-2.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
               <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
-                  <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
-                  <p class="text-cream-foreground">Dreamland Elementary</p>
+                  <h5 class="text-center text-[#fff]"><a href="" class=" text-2xl font-medium">Exploring Minds Elementary Best School</a></h5>
+                  <p class="">Dreamland Elementary</p>
                   <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
                       <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
                   </a>
@@ -489,10 +453,10 @@
           <!-- card end -->
           <!-- card start -->
           <div class="sm:col-start-1 sm:col-end-7 col-span-full relative group/card max-h-[453px]">
-              <img src="images/portfolio-3.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+              <img src="assets/images/portfolio-3.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
               <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
-                  <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
-                  <p class="text-cream-foreground">Dreamland Elementary</p>
+                  <h5 class="text-center text-[#fff]"><a href="" class=" text-2xl font-medium">Exploring Minds Elementary Best School</a></h5>
+                  <p class="">Dreamland Elementary</p>
                   <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
                       <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
                   </a>
@@ -501,10 +465,10 @@
           <!-- card end -->
           <!-- card start -->
           <div class="sm:col-start-7 sm:col-end-13 col-span-full relative group/card max-h-[453px]">
-              <img src="images/portfolio-5.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+              <img src="assets/images/portfolio-5.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
               <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
-                  <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
-                  <p class="text-cream-foreground">Dreamland Elementary</p>
+                  <h5 class="text-center text-[#fff]"><a href="" class=" text-2xl font-medium">Exploring Minds Elementary Best School</a></h5>
+                  <p class="">Dreamland Elementary</p>
                   <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
                       <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
                   </a>
@@ -516,10 +480,10 @@
       <div data-target="learn" class="grid lg:gap-7.5 gap-4 grid-cols-12 sm:grid-rows-[453px] absolute top-0 left-0 transition-all duration-500 translate-y-10 invisible opacity-0 target-card">
         <!-- card start -->
         <div class="sm:col-start-1 sm:col-end-7 col-span-full relative group/card max-h-[453px]">
-            <img src="images/portfolio-3.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+            <img src="assets/images/portfolio-3.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
             <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
-                <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
-                <p class="text-cream-foreground">Dreamland Elementary</p>
+                <h5 class="text-center text-[#fff]"><a href="" class=" text-2xl font-medium">Exploring Minds Elementary Best School</a></h5>
+                <p class="">Dreamland Elementary</p>
                 <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
                     <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
                 </a>
@@ -528,10 +492,10 @@
         <!-- card end -->
         <!-- card start -->
         <div class="sm:col-start-7 sm:col-end-13 col-span-full relative group/card max-h-[453px]">
-            <img src="images/portfolio-5.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+            <img src="assets/images/portfolio-5.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
             <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
-                <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
-                <p class="text-cream-foreground">Dreamland Elementary</p>
+                <h5 class="text-center text-[#fff]"><a href="" class=" text-2xl font-medium">Exploring Minds Elementary Best School</a></h5>
+                <p class="">Dreamland Elementary</p>
                 <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
                     <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
                 </a>
@@ -543,10 +507,10 @@
       <div data-target="child" class="grid lg:gap-7.5 gap-4 grid-cols-12 sm:grid-rows-[453px] absolute top-0 left-0 transition-all duration-500 translate-y-10 invisible opacity-0 target-card">
         <!-- card start -->
         <div class="sm:col-start-1 sm:col-end-8 col-span-full relative group/card max-h-[453px]">
-            <img src="images/portfolio-1.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+            <img src="assets/images/portfolio-1.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
             <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
-                <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
-                <p class="text-cream-foreground">Dreamland Elementary</p>
+                <h5 class="text-center text-[#fff]"><a href="" class=" text-2xl font-medium">Exploring Minds Elementary Best School</a></h5>
+                <p class="">Dreamland Elementary</p>
                 <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
                     <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
                 </a>
@@ -555,10 +519,10 @@
         <!-- card end -->
         <!-- card start -->
         <div class="sm:col-start-8 sm:col-end-13 col-span-full relative group/card max-h-[453px]">
-            <img src="images/portfolio-2.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+            <img src="assets/images/portfolio-2.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
             <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
-                <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
-                <p class="text-cream-foreground">Dreamland Elementary</p>
+                <h5 class="text-center text-[#fff]"><a href="" class=" text-2xl font-medium">Exploring Minds Elementary Best School</a></h5>
+                <p class="">Dreamland Elementary</p>
                 <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
                     <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
                 </a>
@@ -570,10 +534,10 @@
       <div data-target="coaching" class="grid lg:gap-7.5 gap-4 grid-cols-12 grid-rows-[277px] absolute top-0 left-0 transition-all duration-500 translate-y-10 invisible opacity-0 target-card">
         <!-- card start -->
         <div class="sm:col-start-1 md:col-end-5 sm:col-end-7 col-span-full sm:row-span-2 relative group/card">
-            <img src="images/portfolio-1.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+            <img src="assets/images/portfolio-1.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
             <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
-                <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
-                <p class="text-cream-foreground">Dreamland Elementary</p>
+                <h5 class="text-center text-[#fff]"><a href="" class="text-2xl font-medium">Exploring Minds Elementary Best School</a></h5>
+                <p class="">Dreamland Elementary</p>
                 <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
                     <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
                 </a>
@@ -582,10 +546,10 @@
         <!-- card end -->
         <!-- card start -->
         <div class="md:col-start-5 md:col-end-10 sm:col-start-7 sm:col-end-13 col-span-full relative group/card">
-            <img src="images/portfolio-2.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+            <img src="assets/images/portfolio-2.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
             <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
-                <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
-                <p class="text-cream-foreground">Dreamland Elementary</p>
+                <h5 class="text-center text-[#fff]"><a href="" class="text-2xl font-medium">Exploring Minds Elementary Best School</a></h5>
+                <p class="">Dreamland Elementary</p>
                 <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
                     <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
                 </a>
@@ -594,10 +558,10 @@
         <!-- card end -->
         <!-- card start -->
         <div class="md:col-start-10 sm:col-start-7 sm:col-end-13 col-span-full relative group/card">
-            <img src="images/portfolio-3.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+            <img src="assets/images/portfolio-3.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
             <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
-                <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
-                <p class="text-cream-foreground">Dreamland Elementary</p>
+                <h5 class="text-center text-[#fff]"><a href="" class=" text-2xl font-medium">Exploring Minds Elementary Best School</a></h5>
+                <p class="">Dreamland Elementary</p>
                 <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
                     <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
                 </a>
@@ -606,10 +570,10 @@
         <!-- card end -->
         <!-- card start -->
         <div class="md:col-start-5 md:col-end-9 sm:col-start-1 sm:col-end-7 col-span-full relative group/card">
-            <img src="images/portfolio-5.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+            <img src="assets/images/portfolio-5.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
             <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
-                <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
-                <p class="text-cream-foreground">Dreamland Elementary</p>
+                <h5 class="text-center text-[#fff]"><a href="" class=" text-2xl font-medium">Exploring Minds Elementary Best School</a></h5>
+                <p class="">Dreamland Elementary</p>
                 <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
                     <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
                 </a>
@@ -618,10 +582,10 @@
         <!-- card end -->
         <!-- card start -->
         <div class="md:col-start-9 sm:col-span-6 sm:col-end-13 col-span-full relative group/card">
-            <img src="images/portfolio-6.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+            <img src="assets/images/portfolio-6.png" alt="img" class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
             <div class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-second-color rounded-[10px] flex flex-col items-center justify-center">
-                <h5 class="text-center text-[#fff]"><a href="" class="text-cream-foreground text-2xl font-medium">Exploring Minds Elementary  Best School</a></h5>
-                <p class="text-cream-foreground">Dreamland Elementary</p>
+                <h5 class="text-center text-[#fff]"><a href="" class=" text-2xl font-medium">Exploring Minds Elementary Best School</a></h5>
+                <p class="">Dreamland Elementary</p>
                 <a href="" class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
                     <i class="fa-solid fa-arrow-right text-[#ED145B]" aria-hidden="true"></i>
                 </a>
@@ -632,113 +596,113 @@
         </div>
       </div>
     </section>
-    <section id="lastest-service" class="pt-15 pb-15 relative bg-transparent ">
+    <section class="pt-15 pb-15 relative bg-[#FFF0E5] lg:bg-transparent ">
       <div class="container">
-        <!-- <div class="relative after:absolute after:right-0 after:top-0  after:bg-transparent after:w-[calc(100%-279px)] after:h-[calc(100%-120px)] after:rounded-[10px] after:z-[-1]">
-          <div class="flex flex-row justify-between">
-            <div class="service-left flex-shrink-0 flex-grow-0 basis-auto lg:w-[30%] relative">
-             <p class="text-general-title absolute z-0">lastest service</p>
-             <h2 class="text-general-h2 absolute z-99">Building a Str Foundation for Success</h2>
-            </div>
-            <div class="service-right flex-shrink-0 flex-grow-0 basis-auto lg:w-[50%]  ">
-              <p class="text-general-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit platea pharetra, nostra mattis hendrerit proin mollis pretium facilisi in, ligula volutpat</p>
-              
-            </div>
-           
-          </div>
-          <div class="bg-[rgba(255,240,229,0.8)] absolute translate-[50%] right-0 top-0 z-[-9] w-full"> </div>
-        </div> -->
-        <div class="board flex h-[30vh] justify-between">
-          <div class="left">
-              <div class="overlay-text-left ">
-                <p class="text-general-title w-1/3">lastest service</p>
-                <h2 class="text-general-h2">Building a Str Foundation for Success</h2>
+          <div class="relative after:absolute after:right-0 after:top-0 after:lg:bg-[#FFF0E5] after:bg-transparent after:w-[calc(100%-279px)] after:h-[calc(100%-120px)] after:rounded-[10px] after:z-[-1]">
+              <div class="flex lg:flex-row flex-col justify-between lg:items-center">
+                  <div class="flex-shrink-0 flex-grow-0 basis-auto lg:w-[30%]">
+                      <p class="txt-blue-color font-Bubblegum-Sans text-[19px] wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Latest Service</p>
+                      <h2 class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">Building a Str Foundation for Success</h2>
+                  </div>
+                  <div class="flex-shrink-0 flex-grow-0 basis-auto lg:w-[50%]">
+                      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit platea pharetra, nostra mattis hendrerit proin mollis pretium facilisi in, ligula volutpat </p>
+                  </div>
+                  
               </div>
-          </div>
-          <div class="right">
-            <div class="overlay-text-right flex-shrink-0 flex-grow-0 basis-auto lg:w-[50%] w-1/2">
-              <p class="text-general-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit platea pharetra, nostra mattis hendrerit proin mollis pretium facilisi in, ligula volutpat</p>
-            </div>
+              <div class="lg:flex justify-between">
+                  <div class="flex-shrink-0 flex-grow-0 basis-auto lg:w-[25%]">
+                      <div class="relative lg:mt-7.5 mt-5">
+                        <div class="service-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 4" aria-current="true"></span></div>
+                          <div class="lg:mt-10 mt-5">
+                              <a href="" class="px-7.5 py-5 border border-[#1CBBB4] rounded-md max-h-15 min-w-40 whitespace-nowrap btn group">Read More <i class="fa-solid fa-arrow-right txt-blue-color transition-all duration-500 group-hover:text-[#fff]"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="flex-shrink-0 flex-grow-0 basis-auto lg:w-[70%] mt-6 lg:mt-0">
+                      <div class="">
+                          <div class="swiper service-swiper">
+                              <div class="swiper-wrapper [&_.swiper-slide-active>.service-card]:bg-background [&_.swiper-slide-active_.card-footer]:opacity-100 [&_.swiper-slide-active_.card-footer]:visible ">
+                                  <!-- card start -->
+                                  <div class="swiper-slide" >
+                                      <div class="service-card rounded-[10px] px-7.5 py-9 bg-transparent hover:bg-background transition-all duration-500 hover:shadow-3xl m-2.5 group/card">
+                                          <i class="icon-mat text-[65px] txt-green-color"></i>
+                                          <h4 class="lg:max-w-[176px] mt-5"><a href="service-details.html" class="lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:txt-green-color transition-all duration-500 ">Learning School heres us</a></h4> 
+                                          <div class="card-footer opacity-0 invisible transition-all duration-500 group-hover/card:opacity-100 group-hover/card:visible">
+                                              <p class="mt-[15px] lg:max-w-[223px]">Lorem ipsum dolor sit amet a the a conse adipiscing </p>
+                                              <a href="service-details.html" class="inline-flex items-center gap-2.5 lg:mt-7.5 mt-4 group/btn">
+                                                  <span class="group-hover/btn:txt-green-color transition-all duration-500">Read More</span> 
+                                                  <span class="group-hover/btn:ml-1 txt-green-color transition-all duration-500"> <i class="fa-solid fa-arrow-right"></i></span>
+                                              </a>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- card end -->
+                                  <!-- card start -->
+                                  <div class="swiper-slide" >
+                                      <div class="service-card rounded-[10px] px-7.5 py-9 bg-transparent hover:bg-background transition-all duration-500 hover:shadow-3xl m-2.5 group/card">
+                                          <i class="icon-baby-body text-[65px] txt-green-color"></i>
+                                          <h4 class="lg:max-w-[176px] mt-5"><a href="service-details.html" class="lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:txt-green-color transition-all duration-500 ">Learning in the School</a></h4> 
+                                          <div class="card-footer opacity-0 invisible transition-all duration-500 group-hover/card:opacity-100 group-hover/card:visible">
+                                              <p class="mt-[15px] lg:max-w-[223px]">Lorem ipsum dolor sit amet a the a conse adipiscing </p>
+                                              <a href="service-details.html" class="inline-flex items-center gap-2.5 lg:mt-7.5 mt-4 group/btn">
+                                                  <span class="group-hover/btn:txt-green-color transition-all duration-500">Read More</span> 
+                                                  <span class="group-hover/btn:ml-1 txt-green-color transition-all duration-500"> <i class="fa-solid fa-arrow-right"></i></span>
+                                              </a>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- card end -->
+                                  <!-- card start -->
+                                  <div class="swiper-slide" >
+                                      <div class="service-card rounded-[10px] px-7.5 py-9 bg-transparent hover:bg-background transition-all duration-500 hover:shadow-3xl m-2.5 group/card">
+                                          <i class="icon-teddy-bear text-[65px] txt-green-color"></i>
+                                          <h4 class="lg:max-w-[176px] mt-5"><a href="service-details.html" class="lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:txt-green-color transition-all duration-500 ">Stars Preschool our design</a></h4> 
+                                          <div class="card-footer opacity-0 invisible transition-all duration-500 group-hover/card:opacity-100 group-hover/card:visible">
+                                              <p class="mt-[15px] lg:max-w-[223px]">Lorem ipsum dolor sit amet a the a conse adipiscing </p>
+                                              <a href="service-details.html" class="inline-flex items-center gap-2.5 lg:mt-7.5 mt-4 group/btn">
+                                                  <span class="group-hover/btn:txt-green-color transition-all duration-500">Read More</span> 
+                                                  <span class="group-hover/btn:ml-1 txt-green-color transition-all duration-500"> <i class="fa-solid fa-arrow-right"></i></span>
+                                              </a>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- card end -->
+                                  <!-- card start -->
+                                  <div class="swiper-slide" >
+                                      <div class="service-card rounded-[10px] px-7.5 py-9 bg-transparent hover:bg-background transition-all duration-500 hover:shadow-3xl m-2.5 group/card">
+                                          <i class="icon-mat text-[65px] txt-green-color"></i>
+                                          <h4 class="lg:max-w-[176px] mt-5"><a href="service-details.html" class="lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:txt-green-color transition-all duration-500 ">Stars Preschool our design</a></h4> 
+                                          <div class="card-footer opacity-0 invisible transition-all duration-500 group-hover/card:opacity-100 group-hover/card:visible">
+                                              <p class="mt-[15px] lg:max-w-[223px]">Lorem ipsum dolor sit amet a the a conse adipiscing </p>
+                                              <a href="service-details.html" class="inline-flex items-center gap-2.5 lg:mt-7.5 mt-4 group/btn">
+                                                  <span class="group-hover/btn:txt-green-color transition-all duration-500">Read More</span> 
+                                                  <span class="group-hover/btn:ml-1 txt-green-color transition-all duration-500"> <i class="fa-solid fa-arrow-right"></i></span>
+                                              </a>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- card end -->
+                                  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
       </div>
-      <div class="lg:flex justify-between">
-        <div class="flex-shrink-0 flex-grow-0 basis-auto lg:w-[25%]">
-            <div class="relative lg:mt-7.5 mt-5">
-                <div class="service-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 3" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span></div>
-                <div class="lg:mt-10 mt-5">
-                    <a href="" class="px-7.5 py-5 border border-secondary rounded-md max-h-15 min-w-40 whitespace-nowrap btn group">Read More <i class="fa-solid fa-arrow-right text-secondary-foreground transition-all duration-500 group-hover:text-cream-foreground" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="flex-shrink-0 flex-grow-0 basis-auto lg:w-[70%] mt-6 lg:mt-0">
-          
-              <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide">Slide 1</div>
-                  <div class="swiper-slide">Slide 2</div>
-                  <div class="swiper-slide">Slide 3</div>
-                  ...
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-              
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-              
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
-              </div>
-       
-        </div>
-    </div>
-      <!-- <div class="lg:flex justify-between">
-        <div class="flex-shrink-0 flex-grow-0 basis-auto lg:w-[25%]">
-            <div class="relative lg:mt-7.5 mt-5">
-                <div class="service-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span></div>
-                <div class="lg:mt-10 mt-5">
-                    <a href="" class="px-7.5 py-5 border border-secondary rounded-md max-h-15 min-w-40 whitespace-nowrap btn group">Read More <i class="fa-solid fa-arrow-right text-secondary-foreground transition-all duration-500 group-hover:text-cream-foreground" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="flex-shrink-0 flex-grow-0 basis-auto lg:w-[70%] mt-6 lg:mt-0">
-          <div class="carousel-slider flex justify-center">
-            <div class="carousel-slider-item">
-              <div class="slider-content">
-                <i class="fa-solid fa-dice-d6"></i>
-                <p>App Mobile</p>
-              </div>
-            </div>
-            <div class="carousel-slider-item">
-              <div class="slider-content">
-                <i class="fa-solid fa-dice-d6"></i>
-                <p>App Mobile</p>
-              </div>
-            </div>
-            <div class="carousel-slider-item">
-              <div class="slider-content">
-                <i class="fa-solid fa-dice-d6"></i>
-                <p>App Mobile</p>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-    </div> -->
+      <!-- shap start -->
+      <div class="absolute lg:left-24 left-4 lg:bottom-20 bottom-3 animate-anime-img sm:block hidden">
+          <img src="assets/images/man.png" alt="img">
       </div>
-      <div class="px-16 animate-anime-img absolute top-2/3">
-        <img src="images/man.png" alt="">
-      </div>
-    </section>
+      <!-- shap end -->
+  </section>
 
 
     <!-- <section id="faq" class="lg:pb-15 pb-10">
       <div class="container">
         <div class="border-faq grid grid-cols-2 gap-7.5 lg">
           <div class="faq-img">
-            <img src="images/banner-1.png" alt="" />
+            <img src="assets//images/banner-1.png" alt="" />
           </div>
           <div class="faq-detail flex flex-col pt-20">
             <div class="faq-head w-3/5">
@@ -826,7 +790,7 @@
             <div class="group our-profess-dtl">
               <div>
                 <img
-                  src="images/professonal1.png"
+                  src="assets//images/professonal1.png"
                   alt=""
                   class="our-profess-img"
                 />
@@ -857,7 +821,7 @@
             <div class="group our-profess-dtl">
               <div>
                 <img
-                  src="images/professonal2.png"
+                  src="assets//images/professonal2.png"
                   alt=""
                   class="our-profess-img"
                 />
@@ -888,7 +852,7 @@
             <div class="group our-profess-dtl">
               <div>
                 <img
-                  src="images/professonal3.png"
+                  src="assets//images/professonal3.png"
                   alt=""
                   class="our-profess-img"
                 />
@@ -1004,11 +968,11 @@
           </div>
         </div>
         <div class="absolute top-[134px] left-5">
-          <img src="images/knowledge-lshpe.png" alt="" />
+          <img src="assets//images/knowledge-lshpe.png" alt="" />
         </div>
         <div class="absolute top-16 right-[67px]">
           <img
-            src="images/knowledge-animal.png"
+            src="assets//images/knowledge-animal.png"
             class="animate-anime-img"
             alt=""
           />
@@ -1033,7 +997,7 @@
         </div>
         <div>
           <img
-            src="images/service-details-5.png"
+            src="assets//images/service-details-5.png"
             alt=""
             class="rounded-[10px] w-full"
           />
@@ -1041,7 +1005,7 @@
         </div>
       </div>
     </section> -->
-    <script>
+    <!-- <script>
       $(".carousel-slider").slick({
         infinite: true,
         slidesToShow: 5,
@@ -1051,9 +1015,44 @@
         autoplaySpeed: 2000,
         dots: true,
       });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    </script> -->
+    
+   <script src="js/animate.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
+     <script>
+   const service_swiper = new Swiper('.service-swiper', {
+     autoplay: {
+         delay: 5000,
+     },
+    loop: true,
+    spaceBetween: 0,
+    centeredSlides: true,
+    pagination: {
+        el: ".service-pagination",
+        clickable: true
+    },
+    breakpoints: {
+        5320: {
+            slidesPerView: 1,
+        },
+        576: {
+            slidesPerView: 2,
+        },
+        10240: {
+            slidesPerView: 3,
+        },
+        1290: {
+            slidesPerView: 3,
+        }
+    },
+    
+
+    });
+    
+    </script>
+    <script>
+      new WOW().init();
+</script>
   </body>
 </html>

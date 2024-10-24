@@ -102,17 +102,10 @@
     }
   }
 
-  @media (min-width: 1290px) {
+  @media (min-width: 1280px) {
     .container {
-      max-width: 1290px;
+      max-width: 1280px;
     }
-  }
-  .btn2 span:first-child {
-    transform: translateX(-101%);
-    transition: transform 0.3s ease-in;
-  }
-  .btn2:hover span {
-    transform: translateX(0);
   }
 
   h1,
@@ -127,10 +120,11 @@
     color: #686868;
   }
   .education-programs-dtl {
-    @apply rounded-[10px] border w-11/12 px-16 py-10 relative hover:shadow-md hover:border-none transition-all ease-linear duration-500;
+    /* @apply rounded-[10px] border w-11/12 px-16 py-10 relative hover:shadow-md hover:border-none transition-all ease-linear duration-500; */
+    @apply relative rounded-[10px] bg-background border-2 border-[#F2F2F2] lg:p-10 p-4 transition-all duration-500 hover:shadow-2xl hover:border-transparent;
   }
   .education-programs-img {
-    @apply absolute flex justify-center border rounded-[10px] p-5 top-[55px] -left-11 text-[30px] text-[#73BE48] group-hover:bg-[#73BE48] transition-all duration-500 group-hover:text-[#fff];
+    @apply absolute flex justify-center border rounded-[10px] p-3.5 top-[55px] -left-11 text-[30px] text-[#73BE48] group-hover:bg-[#73BE48] transition-all duration-500 group-hover:text-[#fff];
   }
   .education-program-title {
     @apply font-semibold text-2xl group-hover:text-[#73BE48] transition-all duration-500 capitalize;
@@ -141,6 +135,24 @@
   .education-btn-animate {
     animation: fadeDown 3s linear 1s running fade;
     /* animation: 3s linear 1s infinite running slidein; */
+  }
+  .txt-black-color {
+    @apply text-[#000];
+  }
+  .text-cream-foreground {
+    @apply text-[#fff];
+  }
+  .txt-green-color {
+    @apply text-[#73BE48];
+  }
+  .txt-blue-color {
+    @apply text-[#1CBBB4];
+  }
+  .txt-orange-color {
+    @apply text-[#F7941E];
+  }
+  .txt-pink-color {
+    @apply text-[#ED145B];
   }
   .bg-primary-color {
     @apply bg-[#73BE48];
@@ -154,31 +166,25 @@
   .bg-fourth-color {
     @apply bg-[#1CBBB4];
   }
-  .lastest-btn {
+  .target-tab {
     @apply border rounded-lg px-7 py-3 hover:bg-second-color hover:text-[#fff] transition-all duration-500 hover:cursor-pointer;
   }
   .lastest-detail {
     @apply py-10;
   }
-  .header-pinned .\[\.header-pinned_\&\]\:shadow-md {
-    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),
-      0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
-      0 2px 4px -2px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  }
+
   .left {
-    @apply flex-[0_0_30%]  relative;
+    @apply flex-[0_0_22%]  relative;
   }
   .right {
-    @apply flex-[0_0_70%] bg-general relative;
+    @apply flex-[0_0_78%] bg-general relative rounded-[10px];
   }
   .overlay-text-left {
-    @apply absolute  text-2xl font-[bold] text-[#333] z-[99] translate-x-0 left-0 top-0;
+    /* @apply absolute  text-2xl font-[bold] text-[#333] z-[99] translate-x-2/3 left-0 top-0; */
+    @apply absolute  text-2xl font-[bold] text-[#333] z-[99] left-0 top-0;
   }
   .overlay-text-right {
-    @apply absolute  text-2xl font-[bold] text-[#333] z-[99] right-0 top-0;
+    @apply absolute  text-2xl font-[bold] text-[#333] z-[99] right-0 top-0 w-full;
   }
   .swiper-pagination-bullets.swiper-pagination-horizontal {
     @apply left-0 top-0 w-auto;
@@ -187,10 +193,61 @@
   .swiper-pagination-bullet {
     @apply h-1 w-4 rounded-[10px];
   }
+  .btn {
+    position: relative;
+    z-index: 10;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.5s ease-in-out;
+    padding: 20px 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    max-height: 60px;
+  }
+
+  .btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #1cbbb4;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+    border-radius: 6px;
+  }
+
+  .btn:hover::after {
+    width: 100%;
+  }
+
+  .btn:hover {
+    color: #fff;
+  }
 
   .swiper-pagination-bullet-active {
-    @apply w-8 bg-white;
+    @apply w-8 bg-fourth-color;
   }
+
+  .swiper-slide-active {
+    @apply bg-background rounded-[10px] text-black;
+  }
+  .swiper-slide-active.card-footer > p {
+    @apply text-black;
+  }
+  .lastest-porfolio .active-tab {
+    @apply bg-second-color text-[#fff];
+  }
+
+  .education .active-tab {
+    @apply bg-third-color text-[#fff];
+  }
+  /* .swiper-slide-active p {
+    @apply text-black;
+  } */
 
   /*  */
   /* #carousel .carousel-content {
@@ -206,38 +263,139 @@
   #carousel .carousel-content .carousel-desc {
     @apply text-[#888] text-base max-w-[600] m-auto;
   } */
-  .carousel-slider-item p {
-    @apply h-20 uppercase text-[#848482];
-    /* color: white; */
+  *,
+  ::before,
+  ::after {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+    --tw-contain-size: ;
+    --tw-contain-layout: ;
+    --tw-contain-paint: ;
+    --tw-contain-style: ;
   }
-  .carousel-slider-item {
-    @apply p-0 z-[999];
-    /* background-color: white; */
+  ::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+    --tw-contain-size: ;
+    --tw-contain-layout: ;
+    --tw-contain-paint: ;
+    --tw-contain-style: ;
   }
-  .carousel-slider-item .slider-content {
-    @apply bg-[white] px-[30px] py-20 relative after:content-[""] after:block after:w-[5px] after:h-[0%] after:absolute after:transition-all after:duration-[0.2s] after:ease-linear after:right-0 after:top-0 hover:after:h-full;
+  .bg-background {
+    @apply bg-white;
   }
-  #carousel .carousel-slider-item i {
-    @apply text-3xl text-[#848482] mb-2.5;
+  .\[\&_\.swiper-slide-active\>\.service-card\]\:bg-background
+    .swiper-slide-active
+    > .service-card {
+    background-color: #fff;
   }
-  /* ghi đè css thư viện slick */
-  .carousel-slider .slick-dots li button {
-    @apply transition-all duration-[0.3s] ease-linear rounded-[50%] hover:rounded-[50%] before:content-[""] bg-yellow-500;
+
+  .\[\&_\.swiper-slide-active\>img\]\:invert-0 .swiper-slide-active > img {
+    --tw-invert: invert(0);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+      var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert)
+      var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   }
-  .carousel-slider .slick-dots li button:hover {
-    @apply bg-blue-700;
+
+  .\[\&_\.swiper-slide-active_\.card-footer\]\:visible
+    .swiper-slide-active
+    .card-footer {
+    visibility: visible;
   }
-  /* selector tới thẻ li phải có clas slick-active */
-  .carousel-slider .slick-dots li.slick-active button {
-    @apply bg-[#e62b4a];
-  }
-  /* before hoặc after thêm nội dung vào trước hoặc sau 1 thẻ html */
-  .carousel-slider-item .slider-content::after {
-    /* display:none ẩn khỏi UI */
-    @apply bg-[#e62b4a];
-    /* transition kg bat duoc su thay doi cua thuoc tinh display */
-  }
-  .carousel-slider-item .slider-content:hover::after {
-    /* display: block; */
+
+  .\[\&_\.swiper-slide-active_\.card-footer\]\:opacity-100
+    .swiper-slide-active
+    .card-footer {
+    opacity: 1;
   }
 }
