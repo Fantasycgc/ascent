@@ -604,6 +604,18 @@ video {
   padding-left: 5px;
 }
 
+.bg-egg,
+  .bg-img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.bg-client {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 i{
   font-family: Nunito, system-ui;
 }
@@ -2010,11 +2022,11 @@ p {
 }
 
 .bg-client{
-  background-image: url('/ascent/src/assets/images/service-details-5.png');
+  background-image: url('/src/assets/images/service-details-5.png');
 }
 
 .bg-egg{
-  background-image: url('/ascent/src/assets/images/egg-shap.png');
+  background-image: url('/src/assets/images/egg-shap.png');
 }
 
 .bg-gradient-to-tr{
@@ -2022,7 +2034,7 @@ p {
 }
 
 .bg-img{
-  background-image: url('/ascent/src/assets/images/bg-img.png');
+  background-image: url('/src/assets/images/bg-img.png');
 }
 
 .from-\[\#FFF1E7\]{
