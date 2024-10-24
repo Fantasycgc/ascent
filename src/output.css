@@ -2380,12 +2380,15 @@ p {
   background-color: rgb(28 187 180 / var(--tw-bg-opacity));
 }
 
+<<<<<<< HEAD
 .after\:bg-primary-color::after {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(115 190 72 / var(--tw-bg-opacity));
 }
 
+=======
+>>>>>>> 995bc0ef47fb07f8508dcc1a66471d02da386d9c
 .hover\:bg-background:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
