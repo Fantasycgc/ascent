@@ -23,9 +23,9 @@ module.exports = {
       },
 
       backgroundImage: {
-        'egg': "url('/src/assets/images/egg-shap.png') ",
-        'img': "url('/src/assets/images/bg-img.png')",
-        'client': "url('/src/assets/images/service-details-5.png') ",
+        'egg': "url('/assets/images/egg-shap.png') ",
+        'img': "url('/assets/images/bg-img.png')",
+        'client': "url('/assets/images/service-details-5.png') ",
       },
       animation: {
         "anime-img": "anime-img 20s linear 0s 9999999999 normal both",
