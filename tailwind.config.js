@@ -12,6 +12,21 @@ module.exports = {
         "Bubblegum-Sans": ["Bubblegum Sans", 'sans-serif'],
         "jost": ["Jost", 'sans-serif']
       },
+      borderRadius: {
+        'xl': '50px'
+      },
+      gridColumn: {
+        'gril-cols': '37\%_auto'
+      },
+      lineHeight: {
+        'leading': 'leading-\[130\%\]'
+      },
+
+      backgroundImage: {
+        'egg': "url('/ascent/src/assets/images/egg-shap.png')",
+        'img': "url('/ascent/src/assets/images/bg-img.png')",
+        'client': "url('/ascent/src/assets/images/service-details-5.png')",
+      },
       animation: {
         "anime-img": "anime-img 20s linear 0s 9999999999 normal both",
         "anime-circle1": "anime-circle1 20s linear 0s 9999999999 normal both",
@@ -110,7 +125,6 @@ module.exports = {
             transform: "rotate(8deg)",
           }
         }
-
       }
     },
   },
