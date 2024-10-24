@@ -3,82 +3,129 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     container: {
-      center: true
-   },
-   fontFamily: {
-      bum: ['Bubblegum Sans', 'sans-serif'],
-      nunito: ['Nunito','sans-serif'],
-   },
-   
+      center: true,
+
+    },
     extend: {
+      fontFamily: {
+        "nunito": ['Nunito', 'system-ui'],
+        "Bubblegum-Sans": ["Bubblegum Sans", 'sans-serif'],
+        "jost": ["Jost", 'sans-serif']
+      },
       borderRadius: {
-        'xl': '50px' 
-     },
-     gridColumn: {
+        'xl': '50px'
+      },
+      gridColumn: {
         'gril-cols': '37\%_auto'
-     },
-     lineHeight: {
+      },
+      lineHeight: {
         'leading': 'leading-\[130\%\]'
-     },
+      },
 
-     backgroundImage: {
+      backgroundImage: {
         'egg': "url('/ascent/src/assets/images/egg-shap.png')",
-        'img' : "url('/ascent/src/assets/images/bg-img.png')",
+        'img': "url('/ascent/src/assets/images/bg-img.png')",
         'client': "url('/ascent/src/assets/images/service-details-5.png')",
-     },
-
-     animation: {
+      },
+      animation: {
         "anime-img": "anime-img 20s linear 0s 9999999999 normal both",
-        'lineari': 'linearr 1s linear',
-        'left-right' : 'leftRight 3s ease-in-out infinite',
-         'fadeOut' : 'fadeInUp 1s ease-out',
-     },
+        "anime-circle1": "anime-circle1 20s linear 0s 9999999999 normal both",
+        "anime-updown": "anime-updown 13s linear 0s 9999999999 normal both",
+        "anime-img2": "anime-img2 15s ease 0s 999999 normal forwards",
+        "fadeInUp": "fadeInUp 5s ease-out both"
 
-     keyframes: {
-        'anime-img': {
-        "0%, 100%": {
-          Transform: "translateX(0)",
-        },
+      },
+      keyframes: {
+        "fadeInUp": {
+          "from": {
+            opacity: 0,
+            transform: "translate3d(0, 50%, 0)"
 
-        "10%, 30%, 50%, 70%": {
-           Transform: "translateX(-10px)",
+          },
+          "to": {
+            opacity: 1,
+            transform: "none"
+          }
         },
+        "anime-img": {
+          "0%,100%": {
+            transform: "translateX(0)",
+          },
 
-        "20%, 40%, 60%": {
-           Transform: "translateX(10px)",
-        },
+          "10%,30%,50%,70%": {
+            transform: "translateX(-10px)",
+          },
 
-        "80%": {
-           Transform: "translateX(8px)",
+          "20%,40%,60%": {
+            transform: "translateX(10px)",
+          },
+          "80%": {
+            transform: "translateX(8px)",
+          },
+          "90%": {
+            transform: "translateX(-8px)",
+          }
         },
+        "anime-circle1": {
+          "0%,100%": {
+            transform: "translateX(-30px)",
+          },
 
-        "90%": {
-           Transform: "translateX(-8px)",
-        },
-        },
+          "10%,30%,50%,70%": {
+            transform: "translateX(-8px)",
+          },
 
-        'linearr': {
-           '0%': {
-            transform: "translate3d(0,0,0)",
-           },
-           '100%': {
-            transform: "translate3d(100%,0,0)",
+          "20%,40%,60%": {
+            transform: "translateX(-40px)",
+          },
+          "80%": {
+            transform: "translateX(-30px)",
+          },
+          "90%": {
+            transform: "translateX(-2px)",
+          }
         },
+        "anime-updown": {
+          "0%,100%": {
+            transform: "translateY(0)",
+          },
+          "10%,30%,50%,70%": {
+            transform: "translateY(-8px)",
+          },
+          "20%,40%,60%": {
+            transform: "translateY(8px)",
+          },
+          "80%": {
+            transform: "translateY(6.4px)",
+          },
+          "90%": {
+            transform: "translateY(-6.4px)",
+          }
         },
-      'leftRight': {
-         '0%': { transform: 'translateX(0)' },
-         '50%': { transform: 'translateX(40px)' },
-         '100%': { transform: 'translateX(0)' },
-       },
+        "anime-img2": {
+          "0%,100%": {
+            transform: "rotate(0deg)",
+            // transform-origin: "50% 50%",
+          },
+          "10%": {
+            transform: "rotate(8deg)",
+          },
 
-       'fadeInUp': {
-        '0%': { opacity: 0, transform: 'translateY(20px)' },
-        '100%': { opacity: 1, transform: 'translateY(0)' },
-       }
-     },
-      fontFamily: { 
-        "nunito": ['Nunito', 'sans-serif'] 
-    } 
+          "20%,40%,60%": {
+            transform: "rotate(-10deg)",
+          },
+          "30%,50%,70%": {
+            transform: "rotate(10deg)",
+          },
+
+          "80%": {
+            transform: "rotate(-8deg)",
+          },
+          "90%": {
+            transform: "rotate(8deg)",
+          }
+        }
+      }
     },
   },
   plugins: [],
