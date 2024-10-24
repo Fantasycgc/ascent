@@ -2022,11 +2022,11 @@ p {
 }
 
 .bg-client{
-  background-image: url('/src/assets/images/service-details-5.png');
+  background-image: url('/src/assets/images/service-details-5.png') ;
 }
 
 .bg-egg{
-  background-image: url('/src/assets/images/egg-shap.png');
+  background-image: url('/src/assets/images/egg-shap.png') ;
 }
 
 .bg-gradient-to-tr{
