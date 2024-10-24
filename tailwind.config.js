@@ -8,7 +8,6 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-<<<<<<< HEAD
         "nunito": ['Nunito', 'system-ui'],
         "Bubblegum-Sans": ["Bubblegum Sans", 'sans-serif'],
         "jost": ["Jost", 'sans-serif']
@@ -111,9 +110,7 @@ module.exports = {
             transform: "rotate(8deg)",
           }
         }
-=======
-        'nunito': ["Nunito", system - ui]
->>>>>>> 995bc0ef47fb07f8508dcc1a66471d02da386d9c
+
       }
     },
   },
